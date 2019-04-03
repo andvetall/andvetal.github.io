@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../CSS/css1.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HomeWorks2-js</title>
+	<script type="text/javascript" src="../js/home-work2.js"></script>
+	
+</head>
+<body>
+	<header class="top_page">
+		<div class="banner1">
+			<h1>Home Works</h1>
+		</div>
+	</header>
+	<section class="big_block">
+
+		<nav class="navigation">
+			<div class="sidebar">
+				<h2 class="sidebar_top">
+					Choose Home Work	
+				</h2>
+				<ul class="list">
+					<li>
+						<a href="index1.html">
+							Home work - 1
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 2
+						</a>
+					</li>
+					<li>
+						<a href="index3.html">
+							Home Work - 3
+						</a>
+					</li>
+					<li>
+						<a href="index4.html">
+							Home Work - 4
+						</a>
+					</li>
+					<li>
+						<a href="index5.html">
+							Home Work - 5
+						</a>
+					</li>
+					<li>
+						<a href="index6.html">
+							Home Work - 6
+						</a>
+					</li>
+					<li>
+						<a href="index7.html">
+							Home Work - 7
+						</a>
+					</li>
+					<li>
+						<a href="index8.html">
+							Home Work - 8
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 9
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 10
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 11
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 12
+						</a>
+					</li>
+				</ul>
+				<hr>
+				
+				
+				<a class="main_page_link" href="../index.html">
+					Go to main page!
+				</a>
+			</div>
+
+			<!-- <div class="button1">
+				<button>
+					RESERVE YOUR STAY TODAY!
+				</button>
+				
+			</div> -->
+			
+		</nav>
+
+		<div class="main_article">
+			<h3>
+				Andriichuk Vitalii
+			</h3>
+			<p class="italic_p">
+				Home Work 2
+			</p>
+			<p>
+				Обязательная часть ( 3 балла )
+			</p>
+			<p>
+				Создайте пустой массив letters
+
+Создайте строку из нескольких слов, например "Backend As A Service"
+
+Напилите код, который разбивает эту строку на массив слов и пушит в массив letters первый символ каждого слова
+
+Выведите результат в консоль
+
+Объедините все элементы массива letters в одну строку и выведите ее в консоль
+			</p>
+			
+			<textarea disabled="disabled" rows="20" class="text1">
+var letters = []
+var str = "Backend As A Service"
+newStr = str.split(' ')
+for (var i = 0; i < newStr.length; i++){
+    letters.push((newStr[i].charAt(0)))
+}
+			</textarea>
+			<input type="button" class="func1" value="Выполнить код" onclick="homeWorkTwoOne();">
+			
+			<p>
+				Дополнительно ( 4 балла )
+			</p>
+			<p>
+				Объявите функцию с одним формальным параметром, которая проверяет тип данных переданного аргумента и:
+
+если это число, возвращает текущую дату в формате "20.02.2019, 13:21:51"
+в противном случае возвращает строку "Неверный тип данных"
+Вызовите функцию
+			</p>
+			
+			<textarea disabled="disabled" rows="20" class="text1">
+function func(param) {
+    console.log ( typeof param === 'number' ? new Date().toLocaleString()  : 'Неверный тип данных' )
+}
+			</textarea>
+			<input type="button" class="func1" value="Выполнить код" onclick="homeWorkTwoTwo(5), homeWorkTwoTwo('qwerty');">
+			
+			<p>
+				Дополнительно ( 5 балла )
+			</p>
+			<p>
+				Откройте Chrome DevTools
+
+В панели навигации найдите файл index01.js ( в папке js/ )
+
+Установите breakpoint на строке вызова функции insertUserText ( строка 10 )
+
+Перезагрузите страницу
+
+Теперь обратите внимание на функцию testUserText
+
+Ваша задача: обезопасить свою страницу от внедрения вредоносного кода с помощью функции валидации testUserText
+
+функция должна вывести на страницу текст пользователя безопасным способом
+
+( т.е. текст должен быть выведен "as is" ( как есть ), но код не должен быть выполнен )
+
+
+			</p>
+			<div class="home_work_image">
+				<img src="images/HW_2.png" >
+			</div>
+			
+			
+			<figure>
+				<img src="images/javascript1.png" alt="logo_js">
+				
+			</figure>
+
+		</div>
+		
+
+	</section>
+<script type="text/javascript" src="../js/nemu.js"></script>
+</body>
+</html>

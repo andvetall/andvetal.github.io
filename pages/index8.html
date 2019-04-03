@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../CSS/css1.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HomeWorks-js</title>
+	<script type="text/javascript" src="../js/home-work8.js"></script>
+</head>
+<body>
+	<header class="top_page">
+		<div class="banner1">
+			<h1>Home Works</h1>
+		</div>
+	</header>
+	<section class="big_block">
+
+		<nav class="navigation">
+		
+			<div class="sidebar">
+				<h2 class="sidebar_top">
+					Choose Home Work	
+				</h2>
+				<ul class="list">
+					<li>
+						<a href="index1.html">
+							Home work - 1
+						</a>
+					</li>
+					<li>
+						<a href="index2.html">
+							Home Work - 2
+						</a>
+					</li>
+					<li>
+						<a href="index3.html">
+							Home Work - 3
+						</a>
+					</li>
+					<li>
+						<a href="index4.html">
+							Home Work - 4
+						</a>
+					</li>
+					<li>
+						<a href="index5.html">
+							Home Work - 5
+						</a>
+					</li>
+					<li>
+						<a href="index6.html">
+							Home Work - 6
+						</a>
+					</li>
+					<li>
+						<a href="index7.html">
+							Home Work - 7
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 8
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 9
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 10
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 11
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 12
+						</a>
+					</li>
+				</ul>
+				<hr>
+				
+				
+				<a class="main_page_link" href="../index.html">
+					Go to main page!
+				</a>
+			</div>
+
+			<!-- <div class="button1">
+				<button>
+					RESERVE YOUR STAY TODAY!
+				</button>
+				
+			</div> -->
+			
+		</nav>
+
+		<div class="main_article">
+			<h3>
+				Andriichuk Vitalii
+			</h3>
+			<p class="italic_p">
+				Home Work 8
+			</p>
+			<p>
+				Обязательная часть ( 3 балла )
+			</p>
+			<p>
+				 Напилите код, выводящий на страницу текущее время в течение 100 секунд
+
+
+			</p>
+			
+				<textarea disabled="disabled" rows="20" class="text1">
+var clock = document.body.appendChild(
+    document.createElement('h3')
+)
+
+
+for(var x = 0; x < 100; x++){
+    (function(arg){
+        return function(){
+            setTimeout(
+                () => clock.innerText = new Date().toLocaleString().split(', ')[1],
+                1000 * arg
+            )
+        }
+    })(x)()
+}
+				</textarea>
+            
+				<div class="result1"></div>
+                
+				<input type="button" class="func1" value="Выполнить код" onclick="func1()"/>
+			
+			<p>
+				<!-- Дополнительно ( 4 балла )
+			</p>
+			<p>
+				Создайте коллекцию вложенных друг в друга html-элементов с обработчиками событий click, mouseover, mouseout
+
+var collection = []
+
+function over ( event ) {
+    ...
+}
+function out ( event ) {
+    ...
+}
+function clickHandler ( event ) {
+    ...
+}
+
+[ "first", "second", "third", "fourth" ].forEach (
+    function ( tag, index, arr  ) {
+        ...
+    }
+)
+Установите атрибуты стиля width и height такие, чтобы вложенные элементы были меньше размером, чем родитель
+
+Установите значение #ff00ff50 атрибута background-color каждому элементу
+
+Установите значение dotted 1px yellow; атрибута border каждому элементу
+
+При наступлении события mouseover значение атрибута background-color должно меняться на #ffff0050
+
+При наступлении события mouseout атрибуту background-color должно устанавливаться исходное значение
+
+При наступлении события click элемент должен быть удален
+
+При наведении мышки на элемент должна появляться подсказка с его именем ( "first", "second", "third", "fourth" )
+			</p>
+			<p>
+				<textarea disabled="disabled" rows="20" class="text1">
+var elemData = {
+    name: "div",
+    attrs: {
+        className: "container",
+        title: ["first", "second", "third", "fourth"],
+        style: `
+           border: dotted 1px yellow;
+           background-color: #ff00ff50;
+       `
+    }
+}
+function over ( event ) {
+    event.target.style.backgroundColor = "#ffff0050"
+}
+function out ( event ) {
+    event.target.style.backgroundColor = "#ff00ff50"
+}
+function clickHandler ( event ) {
+    event.target.remove()
+}
+function insert (elemNum, parentElem){
+    var elem = parentElem.appendChild(document.createElement(elemData.name))
+    for(var attr in elemData.attrs)
+        elem[attr] = elemData.attrs[attr]
+    elem.title = elemData.attrs.title[elemNum]
+    elem.style.width = `${400 - elemNum * 50}px`
+    elem.style.height = `${400 - elemNum * 50}px`
+
+    elem.addEventListener('click', clickHandler)
+    elem.addEventListener('mouseover', over)
+    elem.addEventListener('mouseout', out)
+    return elem
+}
+var collection = []
+collection [0] = insert(0, document.body)
+for(var x = 1; x < 4; x++){
+    collection[x] = insert(x, collection[x-1])
+}
+				</textarea>
+				<div class="result2">
+					<script type="text/javascript" src="../js/home-work72.js"></script>
+				</div>
+				<input type="button" class="func1" value="Выполнить код" onclick="func2()"/>
+			</p>
+			<p>
+				Дополнительно ( 5 балла )
+			</p>
+			<p>
+				Условия предыдущего задания изменить так:
+
+var collection = []
+
+function enter ( event ) {
+    ...
+}
+function leave ( event ) {
+    ...
+}
+function clickHandler ( event ) {
+    ...
+}
+
+[ 1, 2, 3, 4, 5, 6, 7 ].forEach (
+    ...
+)
+:warning: при удалении элемента его потомки должны оставаться
+
+			</p>
+			<p>
+				
+				<textarea disabled="disabled" rows="20" class="text1">
+var elemData = {
+    name: "div",
+    attrs: {
+        className: "container",
+        title: [1, 2, 3, 4, 5, 6, 7],
+        style: `
+           border: dotted 1px yellow;
+           background-color: #ff00ff50;
+       `
+    }
+}
+function enter ( event ) {
+    event.target.style.backgroundColor = "#ffff0050"
+}
+function leave ( event ) {
+    event.target.style.backgroundColor = "#ff00ff50"
+}
+function clickHandler ( event ) {
+    event.target.children.length ?
+        event.target.parentNode.appendChild(event.target.children[0]) : null
+    event.target.remove()
+}
+function insert (elemNum, parentElem){
+    var elem = parentElem.appendChild(document.createElement(elemData.name))
+    for(var attr in elemData.attrs)
+        elem[attr] = elemData.attrs[attr]
+    elem.title = elemData.attrs.title[elemNum]
+    elem.style.width = `${400 - elemNum * 50}px`
+    elem.style.height = `${400 - elemNum * 50}px`
+
+    elem.addEventListener('click', clickHandler)
+    elem.addEventListener('mouseenter', enter)
+    elem.addEventListener('mouseleave', leave)
+    return elem
+}
+var collection = []
+collection [0] = insert(0, document.body)
+for(var x = 1; x < elemData.attrs.title.length; x++){
+    collection[x] = insert(x, collection[x-1])
+}
+				</textarea>
+				<div class="result3">
+					
+				</div>
+				<input type="button" class="func1" value="Выполнить код" onclick="func3()"/>
+			</p> -->
+			<figure>
+				<img src="images/javascript1.png" alt="logo_js">
+				
+			</figure>
+
+		</div>
+		
+
+	</section>
+<script type="text/javascript" src="../js/nemu.js"></script>
+</body>
+</html>

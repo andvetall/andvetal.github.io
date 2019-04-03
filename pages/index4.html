@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../CSS/css1.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HomeWorks-js</title>
+	<script type="text/javascript" src="../js/home-work4.js"></script>
+	
+</head>
+<body>
+	<header class="top_page">
+		<div class="banner1">
+			<h1>Home Works</h1>
+		</div>
+	</header>
+	<section class="big_block">
+
+		<nav class="navigation">
+			<div class="sidebar">
+				<h2 class="sidebar_top">
+					Choose Home Work	
+				</h2>
+				<ul class="list">
+					<li>
+						<a href="index1.html">
+							Home work - 1
+						</a>
+					</li>
+					<li>
+						<a href="index2.html">
+							Home Work - 2
+						</a>
+					</li>
+					<li>
+						<a href="index3.html">
+							Home Work - 3
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 4
+						</a>
+					</li>
+					<li>
+						<a href="index5.html">
+							Home Work - 5
+						</a>
+					</li>
+					<li>
+						<a href="index6.html">
+							Home Work - 6
+						</a>
+					</li>
+					<li>
+						<a href="index7.html">
+							Home Work - 7
+						</a>
+					</li>
+					<li>
+						<a href="index8.html">
+							Home Work - 8
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 9
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 10
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 11
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 12
+						</a>
+					</li>
+				</ul>
+				<hr>
+				
+				
+				<a class="main_page_link" href="../index.html">
+					Go to main page!
+				</a>
+			</div>
+
+			<!-- <div class="button1">
+				<button>
+					RESERVE YOUR STAY TODAY!
+				</button>
+				
+			</div> -->
+			
+		</nav>
+
+		<div class="main_article">
+			<h3>
+				Andriichuk Vitalii
+			</h3>
+			<p class="italic_p">
+				Home Work 4
+			</p>
+			<p>
+				Обязательная часть ( 3 балла )
+			</p>
+			<p>
+				Создайте объект, свойства которого описывают содержимое дамской сумочки
+
+Создайте метод объекта, позволяющий удалить что-то из сумочки
+
+Создайте метод объекта, позволяющий положить что-то в сумочку
+			</p>
+			<p>
+				<textarea disabled="disabled" rows="20" class="text1">
+var womansBag = {
+    content: [
+        "Passpor",
+        "Lipstick",
+        "Mobile",
+        "Mirrow",
+        "Notepad",
+        "Tablet"
+    ],
+    addItem: function ( item ) {
+        this.content.push ( item )
+    } ,
+    deleteITEM: function ( num ) {
+        this.content.splice ( num, 1 )
+    }
+}
+womansBag.addItem("Vallet")
+console.log (womansBag)
+				</textarea>
+				<button class="func1" value="OK" onclick="alert(womansBag.content)">Show Bag's Content</button>
+				<button class="func1" value="OK" onclick="womansBag.addItem('AddedItem')">addContent</button>
+				<button class="func1" value="OK" onclick="womansBag.deleteITEM(1)">removeContent</button>
+			</p>
+			<p>
+				Дополнительно ( 5 балла )
+			</p>
+			<p>
+				Объявите конструктор, который создает экземпляры с унаследованным методом addProperty
+
+Метод addProperty должен принимать два аргумента:
+
+имя свойства
+значение свойства
+и добавлять экземпляру новое свойство с указанным именем и значением
+			</p>
+			<p>
+				<textarea disabled="disabled" rows="20" class="text1">
+function testConstructor(age, hobby){
+    this.age = age || 50
+    this.hobby = hobby || "Tenis"
+    this.addProperty = function( name, value){
+    	this[name] = value
+    }
+}
+var test = new testConstructor(20, "tennis")
+test.addProperty("masha", "married")
+				</textarea>
+				<button class="func1" value="OK" onclick="alert(testConstructor)">Show Constructor</button>
+				<button class="func1" value="OK" onclick="test.addProperty('Masha', 'Married')">addProperty(Masha, Married)</button>
+				<button class="func1" value="OK" onclick="alert(test.Masha)">Show Property of Masha</button>
+			</p>
+			<figure>
+				<img src="images/javascript1.png" alt="logo_js">
+				
+			</figure>
+
+		</div>
+		
+
+	</section>
+<script type="text/javascript" src="../js/nemu.js"></script>
+</body>
+</html>

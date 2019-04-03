@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../CSS/css1.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HomeWorks-js</title>
+	<script type="text/javascript" src="../js/home-work3.js"></script>
+</head>
+<body>
+	<header class="top_page">
+		<div class="banner1">
+			<h1>Home Works</h1>
+		</div>
+	</header>
+	<section class="big_block">
+
+		<nav class="navigation">
+			<div class="sidebar">
+				<h2 class="sidebar_top">
+					Choose Home Work	
+				</h2>
+				<ul class="list">
+					<li>
+						<a href="index1.html">
+							Home work - 1
+						</a>
+					</li>
+					<li>
+						<a href="index2.html">
+							Home Work - 2
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 3
+						</a>
+					</li>
+					<li>
+						<a href="index4.html">
+							Home Work - 4
+						</a>
+					</li>
+					<li>
+						<a href="index5.html">
+							Home Work - 5
+						</a>
+					</li>
+					<li>
+						<a href="index6.html">
+							Home Work - 6
+						</a>
+					</li>
+					<li>
+						<a href="index7.html">
+							Home Work - 7
+						</a>
+					</li>
+					<li>
+						<a href="index8.html">
+							Home Work - 8
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 9
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 10
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 11
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Home Work - 12
+						</a>
+					</li>
+				</ul>
+				<hr>
+				
+				
+				<a class="main_page_link" href="../index.html">
+					Go to main page!
+				</a>
+			</div>
+
+			<!-- <div class="button1">
+				<button>
+					RESERVE YOUR STAY TODAY!
+				</button>
+				
+			</div> -->
+			
+		</nav>
+
+		<div class="main_article">
+			<h3>
+				Andriichuk Vitalii
+			</h3>
+			<p class="italic_p">
+				Home Work 3
+			</p>
+			<p>
+				Обязательная часть ( 3 балла )
+			</p>
+			<p>
+				Объявите функцию без формальных параметров, которая выводит в консоль сама себя и все переданные ей аргументы
+
+Вызовите эту функцию с аргументами 10, false, "google"
+			</p>
+			<p>
+				<textarea disabled="disabled" rows="20" class="text1">
+function homeWorkThreeOne () {
+    console.log ( arguments )
+}
+homeWorkThreeOne(10, false, "google")
+				</textarea>
+				<input type="button" class="func1" value="Выполнить код" onclick="homeWorkThreeOne(10, false, 'google')">
+			</p>
+			<p>
+				Дополнительно ( 4 балла )
+			</p>
+			<p>
+				Объявите функцию userInfo, которая выводит в консоль:
+
+свойство "Дата регистрации: " + свойство data контекста вызова, если свойство registered имеет значение true
+сообщение "Незарегистрированный пользователь: " + свойство name в противном случае
+( используйте переменные в литералах )
+
+Создайте два объекта с одинаковым набором свойств:
+
+name ( строка )
+registered ( логическое значение )
+data ( дата в формате "дд.мм.гг" )
+Добавьте каждому объекту метод getInfo, который будет ссылкой на функцию userInfo
+
+Вызовите каждый метод
+			</p>
+			<p>
+				<textarea disabled="disabled" rows="20" class="text1">
+  var user1 = {
+        name: "Vasya",
+        registered: true,
+        data: new Date(1991, 3, 15),
+        getInfo: userInfo
+    }
+    var user2 = {
+        name: "Petya",
+        registered: false,
+        data: new Date(),
+        getInfo: userInfo
+    }
+
+    function userInfo() {
+        this.registered == true ? alert(`Дата регистрации: ${this.data}`)
+            : alert(`Незарегистрированный пользователь: ${this.name}`)
+
+    }
+    user1.getInfo()
+    user2.getInfo()
+				</textarea>
+				<input type="button" class="func1" value="Выполнить код" onclick="user1.getInfo(), user2.getInfo();">
+			</p>
+			<p>
+				Дополнительно ( 5 балла )
+			</p>
+			<p>
+				Есть три объекта: users, posts и comments
+
+( готовые объекты уже ждут вас по ссылке )
+
+Написать код функции getPostComments ( postId ),
+
+которая возвращает массив всех комментариев к посту
+
+с идентификатором postId
+
+( с именем автора комментария и текстом комментария )
+
+
+			</p>
+			<p>
+				
+				<textarea disabled="disabled" rows="20" class="text1">
+var users = {
+    14587: {
+        name: "Ivan",
+        email: "ivan78@gmail.com"
+    },
+    28419: {
+        name: "Georg",
+        email: "georg.klep@gmail.com"
+    },
+    41457: {
+        name: "Stephan",
+        email: "stephan.borg@gmail.com"
+    }
+}
+var posts = {
+    7891451: {
+        author: 14587,
+        text: "Imagine we can encapsulate these secondary responsibilities in functions"
+    },
+    7891452: {
+        author: 28419,
+        text: `В конструкторе ключевое слово super используется как функция, вызывающая родительский конструктор.
+                        Её необходимо вызвать до первого обращения к ключевому слову this в теле конструктора.
+                        Ключевое слово super также может быть использовано для вызова функций родительского объекта`
+    },
+    7891453: {
+        author: 28419,
+        text: `DOM не обрабатывает или не вынуждает проверять пространство имен как таковое.
+                        Префикс пространства имен, когда он связан с конкретным узлом, не может быть изменен`
+    },
+    7891454: {
+        author: 14587,
+        text: "Ключевое слово super используется для вызова функций, принадлежащих родителю объекта"
+    }
+}
+var comments = {
+    91078454: {
+        postId: 7891451,
+        author: 28419,
+        text: `The static String.fromCharCode() method returns a string created
+                        from the specified sequence of UTF-16 code units`
+    },
+    91078455: {
+        postId: 7891451,
+        author: 41457,
+        text: `HTML элемент <template> — это механизм для отложенного рендера клиентского контента,
+                        который не отображается во время загрузки, но может быть инициализирован при помощи JavaScript`
+    },
+    91078457: {
+        postId: 7891452,
+        author: 41457,
+        text: "Глобальный объект String является конструктором строк, или, последовательностей символов"
+    },
+    91078458: {
+        postId: 7891452,
+        author: 14587,
+        text: `The Element.namespaceURI read-only property returns the namespace URI of the element,
+                        or null if the element is not in a namespace`
+    }
+}
+
+
+function getCurrentPostComments ( postId ) {
+    var res = []
+    for (var comment in comments) {
+        (comments[comment].postId === postId) ? res.push({
+            author: users[comments[comment].author].name,
+            comments: comments[comment].text
+        }) : null
+
+    }
+    return res
+}
+
+console.log ( getCurrentPostComments ( 7891451 ) )
+				</textarea>
+				<input type="button" class="func1" value="Выполнить код" onclick="alertComments()">
+			</p>
+			<figure>
+				<img src="images/javascript1.png" alt="logo_js">
+				
+			</figure>
+
+		</div>
+		
+
+	</section>
+<script type="text/javascript" src="../js/nemu.js"></script>
+</body>
+</html>
