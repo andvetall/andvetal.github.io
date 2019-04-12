@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="../js/home-work71.js"></script>
 </head>
 <body>
+
 	<header class="top_page">
 		<div class="banner1">
 			<h1>Home Works</h1>
@@ -63,7 +64,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="index9.html">
 							Home Work - 9
 						</a>
 					</li>
@@ -110,19 +111,17 @@
 			<p>
 				Обязательная часть ( 3 балла )
 			</p>
-			<p>
-				 pure JS
+			<textarea disabled="disabled" rows="15" class="text2">
+	pure JS
 
 Создайте элемент 'p', при клике на котором появляется картинка размером 100px
 
 При наведении указателя мышки на картинку ее размер должен плавно увеличиваться до 200px
 
 При клике на картинке она должна исчезать
-
-
-			</p>
+			</textarea>
 			
-				<textarea disabled="disabled" rows="20" class="text1">
+			<textarea disabled="disabled" rows="20" class="text1">
 var parag = document.body.appendChild(document.createElement('p'))
 parag.innerText = "Click Me!"
 var image = document.createElement('img')
@@ -140,17 +139,18 @@ image.addEventListener('mouseout', function(event){
 image.addEventListener('click', function(event){
     event.target ? image.remove() : null
 })
-				</textarea>
+			</textarea>
             
-				<div class="result1"></div>
+			<div class="result1"></div>
                 
-				<input type="button" class="func1" value="Выполнить код" onclick="func1()"/>
+			<input type="button" class="func1" value="Выполнить код" onclick="func1()"/>
 			
 			<p>
 				Дополнительно ( 4 балла )
 			</p>
-			<p>
-				Создайте коллекцию вложенных друг в друга html-элементов с обработчиками событий click, mouseover, mouseout
+			<textarea disabled="disabled" rows="15" class="text2">
+	
+	Создайте коллекцию вложенных друг в друга html-элементов с обработчиками событий click, mouseover, mouseout
 
 var collection = []
 
@@ -182,9 +182,9 @@ function clickHandler ( event ) {
 При наступлении события click элемент должен быть удален
 
 При наведении мышки на элемент должна появляться подсказка с его именем ( "first", "second", "third", "fourth" )
-			</p>
-			<p>
-				<textarea disabled="disabled" rows="20" class="text1">
+			</textarea>
+			
+			<textarea disabled="disabled" rows="20" class="text1">
 var elemData = {
     name: "div",
     attrs: {
@@ -223,15 +223,16 @@ collection [0] = insert(0, document.body)
 for(var x = 1; x < 4; x++){
     collection[x] = insert(x, collection[x-1])
 }
-				</textarea>
-				<div class="result2"></div>
-				<input type="button" class="func1" value="Выполнить код" onclick="func2()"/>
-			</p>
+			</textarea>
+			<div class="result2"></div>
+			<input type="button" class="func1" value="Выполнить код" onclick="func2()"/>
+			
 			<p>
 				Дополнительно ( 5 балла )
 			</p>
-			<p>
-				Условия предыдущего задания изменить так:
+			<textarea disabled="disabled" rows="15" class="text2">
+	
+	Условия предыдущего задания изменить так:
 
 var collection = []
 
@@ -250,10 +251,10 @@ function clickHandler ( event ) {
 )
 :warning: при удалении элемента его потомки должны оставаться
 
-			</p>
-			<p>
+			</textarea>
+			
 				
-				<textarea disabled="disabled" rows="20" class="text1">
+			<textarea disabled="disabled" rows="20" class="text1">
 var elemData = {
     name: "div",
     attrs: {
@@ -294,14 +295,14 @@ collection [0] = insert(0, document.body)
 for(var x = 1; x < elemData.attrs.title.length; x++){
     collection[x] = insert(x, collection[x-1])
 }
-				</textarea>
-				<div class="result3">
+			</textarea>
+			<div class="result3">
 					
-				</div>
-				<input type="button" class="func1" value="Выполнить код" onclick="func3()"/>
-			</p>
+			</div>
+			<input type="button" class="func1" value="Выполнить код" onclick="func3()"/>
+			
 			<figure>
-				<img src="images/javascript1.png" alt="logo_js">
+				<img src="images/andriichuk.png" alt="logo_js">
 				
 			</figure>
 
@@ -310,5 +311,34 @@ for(var x = 1; x < elemData.attrs.title.length; x++){
 
 	</section>
 <script type="text/javascript" src="../js/nemu.js"></script>
+<div class="footer">
+				<div class="link-cont">
+					<div class="link">
+						<a href="https://uk-ua.facebook.com/">
+							<div class="icon-facebook">	
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.instagram.com/?hl=ru">
+							<div class="icon-instagram">
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.youtube.com/">
+							<div class="icon-youtube">
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.linkedin.com/">
+							<div class="icon-linkedin2">
+							</div>
+						</a>
+					</div>
+					
+				</div>
+			</div>
 </body>
 </html>

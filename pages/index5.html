@@ -9,6 +9,7 @@
 	
 </head>
 <body>
+
 	<header class="top_page">
 		<div class="banner1">
 			<h1>Home Works</h1>
@@ -64,7 +65,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="index9.html">
 							Home Work - 9
 						</a>
 					</li>
@@ -111,8 +112,9 @@
 			<p>
 				Обязательная часть ( 3 балла )
 			</p>
-			<p>
-				Напилить код функции modificator, такой, чтобы в результате работы кода:
+			<textarea disabled="disabled" rows="15" class="text2">
+	
+	Напилить код функции modificator, такой, чтобы в результате работы кода:
 
 function sampleFunc () {
     console.log ( `${arguments.callee.name}: ${arguments[0]} | ${arguments[1]}` )
@@ -128,9 +130,9 @@ testFunc()
 в консоли было:
 
 sampleFunc: test | sample
-			</p>
-			<p>
-				<textarea disabled="disabled" rows="20" class="text1">
+			</textarea>
+			
+			<textarea disabled="disabled" rows="20" class="text1">
 function sampleFunc () {
     console.log ( `${arguments.callee.name}: ${arguments[0]} | ${arguments[1]}` )
 }
@@ -139,14 +141,15 @@ function modificator ( func ) {
 }
 testFunc = modificator( sampleFunc )
 testFunc()
-				</textarea>
-				<button class="func1" value="OK" onclick="func1()">Выполнить код</button>
-			</p>
+			</textarea>
+			<button class="func1" value="OK" onclick="func1()">Выполнить код</button>
+			
 			<p>
 				Дополнительно ( 4 балла )
 			</p>
-			<p>
-				Напилить код функции modificator, такой, чтобы в результате работы кода:
+			<textarea disabled="disabled" rows="15" class="text2">
+	
+	Напилить код функции modificator, такой, чтобы в результате работы кода:
 
 function sampleFunc () {
     console.info ( `Symbols in my code: ${arguments.callee + 0}` )
@@ -162,9 +165,9 @@ sampleFunc()
 в консоль было выведено число символов в коде функции sampleFunc, т.е.:
 
 Symbols in my code: 93
-			</p>
-			<p>
-				<textarea disabled="disabled" rows="20" class="text1">
+			</textarea>
+			
+			<textarea disabled="disabled" rows="20" class="text1">
 function sampleFunc () {
     console.info ( `Symbols in my code: ${arguments.callee + 0}` )
 }
@@ -175,14 +178,15 @@ function modificator ( func ) {
 }
 modificator( sampleFunc )
 sampleFunc()
-				</textarea>
-				<button class="func1" value="OK" onclick="func2()">Выполнить код</button>
-			</p>
+			</textarea>
+			<button class="func1" value="OK" onclick="func2()">Выполнить код</button>
+			
 			<p>
 				Дополнительно ( 5 балла )
 			</p>
-			<p>
-				Напилите код функции generateError, такой, чтобы в результате работы кода:
+			<textarea disabled="disabled" rows="15" class="text2">
+	
+	Напилите код функции generateError, такой, чтобы в результате работы кода:
 
 function testArguments () {
     function generateError ( numArgs ) {
@@ -202,10 +206,10 @@ testArguments ( "Google" )
 ► Application: Invalid arguments
 Function needs 3 arguments, but only 1 present
 
-			</p>
-			<p>
+			</textarea>
+			
 				
-				<textarea disabled="disabled" rows="20" class="text1">
+			<textarea disabled="disabled" rows="20" class="text1">
 function testArguments () {
     function generateError ( numArgs ) {
         if ( arguments.length ) {
@@ -223,11 +227,11 @@ function testArguments () {
     }
 }
 testArguments ( "Google" )
-				</textarea>
-				<button class="func1" value="OK" onclick="func3()">Выполнить код</button>
-			</p>
+			</textarea>
+			<button class="func1" value="OK" onclick="func3()">Выполнить код</button>
+			
 			<figure>
-				<img src="images/javascript1.png" alt="logo_js">
+				<img src="images/andriichuk.png" alt="logo_js">
 				
 			</figure>
 
@@ -236,5 +240,34 @@ testArguments ( "Google" )
 
 	</section>
 <script type="text/javascript" src="../js/nemu.js"></script>
+<div class="footer">
+				<div class="link-cont">
+					<div class="link">
+						<a href="https://uk-ua.facebook.com/">
+							<div class="icon-facebook">	
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.instagram.com/?hl=ru">
+							<div class="icon-instagram">
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.youtube.com/">
+							<div class="icon-youtube">
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.linkedin.com/">
+							<div class="icon-linkedin2">
+							</div>
+						</a>
+					</div>
+					
+				</div>
+			</div>
 </body>
 </html>

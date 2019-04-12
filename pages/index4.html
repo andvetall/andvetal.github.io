@@ -9,6 +9,7 @@
 	
 </head>
 <body>
+
 	<header class="top_page">
 		<div class="banner1">
 			<h1>Home Works</h1>
@@ -63,7 +64,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="index9.html">
 							Home Work - 9
 						</a>
 					</li>
@@ -110,15 +111,14 @@
 			<p>
 				Обязательная часть ( 3 балла )
 			</p>
-			<p>
-				Создайте объект, свойства которого описывают содержимое дамской сумочки
-
+			<textarea disabled="disabled" rows="15" class="text2">
+	
+	Создайте объект, свойства которого описывают содержимое дамской сумочки
 Создайте метод объекта, позволяющий удалить что-то из сумочки
-
 Создайте метод объекта, позволяющий положить что-то в сумочку
-			</p>
-			<p>
-				<textarea disabled="disabled" rows="20" class="text1">
+			</textarea>
+			
+			<textarea disabled="disabled" rows="20" class="text1">
 var womansBag = {
     content: [
         "Passpor",
@@ -137,25 +137,24 @@ var womansBag = {
 }
 womansBag.addItem("Vallet")
 console.log (womansBag)
-				</textarea>
-				<button class="func1" value="OK" onclick="alert(womansBag.content)">Show Bag's Content</button>
-				<button class="func1" value="OK" onclick="womansBag.addItem('AddedItem')">addContent</button>
-				<button class="func1" value="OK" onclick="womansBag.deleteITEM(1)">removeContent</button>
-			</p>
+			</textarea>
+			<button class="func1" value="OK" onclick="alert(womansBag.content)">Show Bag's Content</button>
+			<button class="func1" value="OK" onclick="womansBag.addItem('AddedItem')">addContent</button>
+			<button class="func1" value="OK" onclick="womansBag.deleteITEM(1)">removeContent</button>
+			
 			<p>
 				Дополнительно ( 5 балла )
 			</p>
-			<p>
-				Объявите конструктор, который создает экземпляры с унаследованным методом addProperty
-
+			<textarea disabled="disabled" rows="15" class="text2">
+	
+	Объявите конструктор, который создает экземпляры с унаследованным методом addProperty
 Метод addProperty должен принимать два аргумента:
-
 имя свойства
 значение свойства
 и добавлять экземпляру новое свойство с указанным именем и значением
-			</p>
-			<p>
-				<textarea disabled="disabled" rows="20" class="text1">
+			</textarea>
+			
+			<textarea disabled="disabled" rows="20" class="text1">
 function testConstructor(age, hobby){
     this.age = age || 50
     this.hobby = hobby || "Tenis"
@@ -165,13 +164,13 @@ function testConstructor(age, hobby){
 }
 var test = new testConstructor(20, "tennis")
 test.addProperty("masha", "married")
-				</textarea>
-				<button class="func1" value="OK" onclick="alert(testConstructor)">Show Constructor</button>
-				<button class="func1" value="OK" onclick="test.addProperty('Masha', 'Married')">addProperty(Masha, Married)</button>
-				<button class="func1" value="OK" onclick="alert(test.Masha)">Show Property of Masha</button>
-			</p>
+			</textarea>
+			<button class="func1" value="OK" onclick="alert(testConstructor)">Show Constructor</button>
+			<button class="func1" value="OK" onclick="test.addProperty('Masha', 'Married')">addProperty(Masha, Married)</button>
+			<button class="func1" value="OK" onclick="alert(test.Masha)">Show Property of Masha</button>
+			
 			<figure>
-				<img src="images/javascript1.png" alt="logo_js">
+				<img src="images/andriichuk.png" alt="logo_js">
 				
 			</figure>
 
@@ -180,5 +179,34 @@ test.addProperty("masha", "married")
 
 	</section>
 <script type="text/javascript" src="../js/nemu.js"></script>
+<div class="footer">
+				<div class="link-cont">
+					<div class="link">
+						<a href="https://uk-ua.facebook.com/">
+							<div class="icon-facebook">	
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.instagram.com/?hl=ru">
+							<div class="icon-instagram">
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.youtube.com/">
+							<div class="icon-youtube">
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.linkedin.com/">
+							<div class="icon-linkedin2">
+							</div>
+						</a>
+					</div>
+					
+				</div>
+			</div>
 </body>
 </html>

@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="../js/home-work6.js"></script>
 </head>
 <body>
+
 	<header class="top_page">
 		<div class="banner1">
 			<h1>Home Works</h1>
@@ -63,7 +64,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="index9.html">
 							Home Work - 9
 						</a>
 					</li>
@@ -91,12 +92,7 @@
 				</a>
 			</div>
 
-			<!-- <div class="button1">
-				<button>
-					RESERVE YOUR STAY TODAY!
-				</button>
-				
-			</div> -->
+	
 			
 		</nav>
 
@@ -110,21 +106,17 @@
 			<p>
 				Обязательная часть ( 3 балла )
 			</p>
-			<p>
-				Создайте массив tags с именами валидных тегов HTML5
-
+			<textarea disabled="disabled" rows="15" class="text2">
+	
+	Создайте массив tags с именами валидных тегов HTML5
 Теперь создайте массив classes с именами классов
-
 ( число элементов в массиве classes должно быть не меньше, чем число элементов массива tags )
-
 Создайте элемент style и вставьте его в head документа
-
 Добавьте контент элемента style с описанием классов, имена которых находятся в массиве classes
-
 Итерируйте массив tags, создавая соответствующие элементы и вставляя их на страницу, добавляя каждому элементу класс из массива classes
-			</p>
+			</textarea>
 			
-				<textarea disabled="disabled" rows="20" class="text1">
+			<textarea disabled="disabled" rows="20" class="text1">
 var tags = ["header", "div", "div", "p", "footer"]
 var classes = ["top", "logo", "container", "parag", "bottom"]
 
@@ -141,22 +133,23 @@ for(var tag in tags){
     document.body.appendChild(document.createElement(`${tags[tag]}`))
         .setAttribute('class', `${classes[tag]}`)
 }
-				</textarea>
+			</textarea>
             
-				<div class="result1"></div>
+			<div class="result1"></div>
                 
-				<input type="button" class="func1" value="Выполнить код" onclick="func1()"/>
+			<input type="button" class="func1" value="Выполнить код" onclick="func1()"/>
 			
 			<p>
 				Дополнительно ( 4 балла )
 			</p>
-			<p>
-				Результат должен быть аналогичен тому, что получится в предыдущем упражнении
+			<textarea disabled="disabled" rows="15" class="text2">
+	
+	Результат должен быть аналогичен тому, что получится в предыдущем упражнении
 
 Однако исходный массив tags должен быть массивом объектов, каждый из которых содержит не только имя тега элемента, но и его атрибуты, а так же хотя бы один обработчик события
 
 Таким образом, массив classes нам уже не нужен, но кроме стилизации элементов нужно еще добавить их контент, используя как атрибуты тегов, так и свойства элементов DOM
-			</p>
+			</textarea>
 			<p>
 				<textarea disabled="disabled" rows="20" class="text1">
 var tags = [
@@ -232,8 +225,8 @@ tags.forEach(function(elem){
 			<p>
 				Дополнительно ( 5 балла )
 			</p>
-			<p>
-				Напилить код, который выбирает все элементы-потомки body ( :warning: кроме элементов script ) и добавляет им класc:
+			<textarea disabled="disabled" rows="15" class="text2">
+	Напилить код, который выбирает все элементы-потомки body ( :warning: кроме элементов script ) и добавляет им класc:
 
 .redBack {
     background-color: red!important;
@@ -244,11 +237,10 @@ var tags = [ "header", "footer", "main", "div", "p" ]
 Запустить код в консоли любой страницы
 
 Подсказка: используйте методы объекта classList
-
-			</p>
-			<p>
+			</textarea>
+			
 				
-				<textarea disabled="disabled" rows="20" class="text1">
+			<textarea disabled="disabled" rows="20" class="text1">
 var style = document.head.appendChild(document.createElement('style'))
 
     style.textContent = `
@@ -259,11 +251,11 @@ var style = document.head.appendChild(document.createElement('style'))
         elem.tagName === "SCRIPT" ? null :
             elem.className = "redBack"
     }
-				</textarea>
-				<input type="button" class="func1" value="Выполнить код" onclick="func3()"/>
-			</p>
+			</textarea>
+			<input type="button" class="func1" value="Выполнить код" onclick="func3()"/>
+			
 			<figure>
-				<img src="images/javascript1.png" alt="logo_js">
+				<img src="images/andriichuk.png" alt="logo_js">
 				
 			</figure>
 
@@ -272,5 +264,34 @@ var style = document.head.appendChild(document.createElement('style'))
 
 	</section>
 <script type="text/javascript" src="../js/nemu.js"></script>
+<div class="footer">
+				<div class="link-cont">
+					<div class="link">
+						<a href="https://uk-ua.facebook.com/">
+							<div class="icon-facebook">	
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.instagram.com/?hl=ru">
+							<div class="icon-instagram">
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.youtube.com/">
+							<div class="icon-youtube">
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.linkedin.com/">
+							<div class="icon-linkedin2">
+							</div>
+						</a>
+					</div>
+					
+				</div>
+			</div>
 </body>
 </html>

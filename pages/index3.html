@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="../js/home-work3.js"></script>
 </head>
 <body>
+
 	<header class="top_page">
 		<div class="banner1">
 			<h1>Home Works</h1>
@@ -62,7 +63,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="index9.html">
 							Home Work - 9
 						</a>
 					</li>
@@ -109,25 +110,26 @@
 			<p>
 				Обязательная часть ( 3 балла )
 			</p>
-			<p>
-				Объявите функцию без формальных параметров, которая выводит в консоль сама себя и все переданные ей аргументы
+			<textarea disabled="disabled" rows="15" class="text2">
 
+	Объявите функцию без формальных параметров, которая выводит в консоль сама себя и все переданные ей аргументы
 Вызовите эту функцию с аргументами 10, false, "google"
-			</p>
-			<p>
-				<textarea disabled="disabled" rows="20" class="text1">
+			</textarea>
+			
+			<textarea disabled="disabled" rows="20" class="text1">
 function homeWorkThreeOne () {
     console.log ( arguments )
 }
 homeWorkThreeOne(10, false, "google")
-				</textarea>
-				<input type="button" class="func1" value="Выполнить код" onclick="homeWorkThreeOne(10, false, 'google')">
-			</p>
+			</textarea>
+			<input type="button" class="func1" value="Выполнить код" onclick="homeWorkThreeOne(10, false, 'google')">
+			
 			<p>
 				Дополнительно ( 4 балла )
 			</p>
-			<p>
-				Объявите функцию userInfo, которая выводит в консоль:
+			<textarea disabled="disabled" rows="15" class="text2">
+	
+	Объявите функцию userInfo, которая выводит в консоль:
 
 свойство "Дата регистрации: " + свойство data контекста вызова, если свойство registered имеет значение true
 сообщение "Незарегистрированный пользователь: " + свойство name в противном случае
@@ -141,9 +143,9 @@ data ( дата в формате "дд.мм.гг" )
 Добавьте каждому объекту метод getInfo, который будет ссылкой на функцию userInfo
 
 Вызовите каждый метод
-			</p>
-			<p>
-				<textarea disabled="disabled" rows="20" class="text1">
+			</textarea>
+			
+			<textarea disabled="disabled" rows="20" class="text1">
   var user1 = {
         name: "Vasya",
         registered: true,
@@ -164,30 +166,23 @@ data ( дата в формате "дд.мм.гг" )
     }
     user1.getInfo()
     user2.getInfo()
-				</textarea>
-				<input type="button" class="func1" value="Выполнить код" onclick="user1.getInfo(), user2.getInfo();">
-			</p>
+			</textarea>
+			<input type="button" class="func1" value="Выполнить код" onclick="user1.getInfo(), user2.getInfo();">
+			
 			<p>
 				Дополнительно ( 5 балла )
 			</p>
-			<p>
-				Есть три объекта: users, posts и comments
-
-( готовые объекты уже ждут вас по ссылке )
-
+			<textarea disabled="disabled" rows="15" class="text2">
+	
+	Есть три объекта: users, posts и comments
 Написать код функции getPostComments ( postId ),
-
 которая возвращает массив всех комментариев к посту
-
 с идентификатором postId
-
 ( с именем автора комментария и текстом комментария )
-
-
-			</p>
-			<p>
+			</textarea>
+			
 				
-				<textarea disabled="disabled" rows="20" class="text1">
+			<textarea disabled="disabled" rows="20" class="text1">
 var users = {
     14587: {
         name: "Ivan",
@@ -263,11 +258,11 @@ function getCurrentPostComments ( postId ) {
 }
 
 console.log ( getCurrentPostComments ( 7891451 ) )
-				</textarea>
-				<input type="button" class="func1" value="Выполнить код" onclick="alertComments()">
-			</p>
+			</textarea>
+			<input type="button" class="func1" value="Выполнить код" onclick="alertComments()">
+			
 			<figure>
-				<img src="images/javascript1.png" alt="logo_js">
+				<img src="images/andriichuk.png" alt="logo_js">
 				
 			</figure>
 
@@ -276,5 +271,34 @@ console.log ( getCurrentPostComments ( 7891451 ) )
 
 	</section>
 <script type="text/javascript" src="../js/nemu.js"></script>
+<div class="footer">
+				<div class="link-cont">
+					<div class="link">
+						<a href="https://uk-ua.facebook.com/">
+							<div class="icon-facebook">	
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.instagram.com/?hl=ru">
+							<div class="icon-instagram">
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.youtube.com/">
+							<div class="icon-youtube">
+							</div>
+						</a>
+					</div>
+					<div class="link">
+						<a href="https://www.linkedin.com/">
+							<div class="icon-linkedin2">
+							</div>
+						</a>
+					</div>
+					
+				</div>
+			</div>
 </body>
 </html>
