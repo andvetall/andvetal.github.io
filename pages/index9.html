@@ -7,310 +7,185 @@
 	<title>HomeWorks-js</title>
 	<script type="text/javascript" src="../js/home-work9.js"></script>
 </head>
-<body>
+<body onload="
+		showCode(homeWorkOne, '.text1-1'),
+		showCode(homeWorkTwo, '.text1-2',), 
+		showCode(homeWorkThree, '.text1-3'),
+		showTask('.text2-1', one),
+		showTask('.text2-2', two),
+		showTask('.text2-3', three)">
 
-	<header class="top_page">
-		<div class="banner1">
-			<h1>Home Works</h1>
-		</div>
-	</header>
-	<section class="big_block">
+	
+	<div class="big_block">
 
 		<nav class="navigation">
-		
-			<div class="sidebar">
-				<h2 class="sidebar_top">
-					Choose Home Work	
-				</h2>
-				<ul class="list">
-					<li>
-						<a href="index1.html">
-							Home work - 1
-						</a>
-					</li>
-					<li>
-						<a href="index2.html">
-							Home Work - 2
-						</a>
-					</li>
-					<li>
-						<a href="index3.html">
-							Home Work - 3
-						</a>
-					</li>
-					<li>
-						<a href="index4.html">
-							Home Work - 4
-						</a>
-					</li>
-					<li>
-						<a href="index5.html">
-							Home Work - 5
-						</a>
-					</li>
-					<li>
-						<a href="index6.html">
-							Home Work - 6
-						</a>
-					</li>
-					<li>
-						<a href="index7.html">
-							Home Work - 7
-						</a>
-					</li>
-					<li>
-						<a href="index8.html">
-							Home Work - 8
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 9
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 10
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 11
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 12
-						</a>
-					</li>
-				</ul>
-				<hr>
-				
-				
-				<a class="main_page_link" href="../index.html">
-					Go to main page!
-				</a>
-			</div>
+			
+			<ul>
+				<li id="menu"><a href="#">Menu</a></li>
+				<li class="list"><a href="#">JS</a>
+					<ul>
+						<li>
+							<a href="index1.html">
+								Home work - 1
+							</a>
+						</li>
+						<li>
+							<a href="index2.html">
+								Home Work - 2
+							</a>
+						</li>
+						<li>
+							<a href="index3.html">
+								Home Work - 3
+							</a>
+						</li>
+						<li>
+							<a href="index4.html">
+								Home Work - 4
+							</a>
+						</li>
+						<li>
+							<a href="index5.html">
+								Home Work - 5
+							</a>
+						</li>
+						<li>
+							<a href="index6.html">
+								Home Work - 6
+							</a>
+						</li>
+						<li>
+							<a href="index7.html">
+								Home Work - 7
+							</a>
+						</li>
+						<li>
+							<a href="index8.html">
+								Home Work - 8
+							</a>
+						</li>
+						<li>
+							<a href="index9.html">
+								Home Work - 9
+							</a>
+						</li>
+						<li>
+							<a href="index10.html">
+								Home Work - 10
+							</a>
+						</li>
+						<li>
+							<a href="index11.html">
+								Home Work - 11
+							</a>
+						</li>
+						<li>
+							<a href="index12.html">
+								Home Work - 12
+							</a>
+						</li>
+						<li>
+							<a href="index13.html">
+								Home Work - 13
+							</a>
+						</li>
+						<li>
+							<a href="index13.html">
+								Home Work - 13
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="list"><a href="#">MarkUp</a></li>
+				<li class="list"><a href="#">Soсials</a>
 
+					<ul>	
+						<li>
+							<a href="https://uk-ua.facebook.com/">
+								<div class="icon-facebook">	
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/?hl=ru">
+								<div class="icon-instagram">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/">
+								<div class="icon-youtube">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/">
+								<div class="icon-linkedin2">
+								</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="list"><a href="../index.html">To main</a></li>
+			</ul>
 		</nav>
 
+
+
+
+
 		<div class="main_article">
-			<h3>
-				Andriichuk Vitalii
-			</h3>
-			<p class="italic_p">
-				Home Work 9
-			</p>
 			<p>
-				Обязательная часть ( 3 балла )
+				Main Part ( 3 points )
 			</p>
-			<textarea disabled="disabled" rows="15" class="text2">
+			<div class="text0">
+				<pre class="text2-1"></pre>
 
-Завершите код функции typeMessage так, чтобы на страницу выводился один символ в секунду
-
-function typeMessage ( message, velocity ) {
-    var container = document.getElementById ( "demo" ) ?
-        document.getElementById ( "demo" ) :
-        document.body.appendChild (
-            document.createElement ( "h3" )
-        )
-    container.style = `color: magenta;`
-    ...
-}
-
-typeMessage ( `Welcome to the hell`, 1 )
-			</textarea>
-			
-			<textarea disabled="disabled" rows="20" class="text1">
-
-var container = document.getElementById ( "demo" ) ?
-        document.getElementById ( "demo" ) :
-        document.body.appendChild (
-           document.createElement ( "h3" )
-    	)
-   container.style = `color: magenta;`
-
-   Array.from(message).forEach(function(leter, velocity){
-       setTimeout(
-           () => container.innerText += leter, 1000 * velocity)
-})
-			</textarea>
-            
+				<pre class="text1-1"></pre>
+			</div>
 			<div class="result1"></div>
-                
-			<input type="button" class="func1" value="Выполнить код" onclick="func1()"/>
-			
+
+		</div>
+		<input type="button" class="func1" value="Run script" onclick="homeWorkOne();">
+
+
+
+		<div class="main_article">
 			<p>
-				Дополнительно ( 4 балла )
+				Additional ( 4 points )
 			</p>
-			<textarea disabled="disabled" rows="15" class="text2">
-	
-	Напилите код методов setUserPresent, showPresent и showAbsent
+			<div class="text0">
+				<pre class="text2-2"></pre>
 
-var users = (
-    function ( list ) {
-        var users = []
-        for ( var user of list )
-            users.push ({
-                name: user,
-                present: false
-            })
-
-        return {
-            setUserPresent ( userName, present ) {
-                ...
-            },
-            showPresent () {
-                ...
-            },
-            showAbsent () {
-                ...
-            }
-        }
-    }
-)( [ "Иван", "Дмитрий", "Степан", "Михаил" ] )
-
-users.showAbsent()
-После запуска кода результат в консоли должен быть таким:
-
-Иван
-Дмитрий
-Степан
-Михаил
-а после выполнения кода:
-
-users.setUserPresent( "Иван", "+" )
-users.setUserPresent( "Михаил", "присутствовал" )
-users.setUserPresent( "Степан", true )
-
-users.showPresent()
-			</textarea>
-			
-			<textarea disabled="disabled" rows="20" class="text1">
-
-var users = (
-    function ( list ) {
-        var users = []
-        for ( var user of list )
-            users.push ({
-                name: user,
-                present: false
-            })
-
-        return {
-            setUserPresent ( userName, present ) {
-                let user = users.find(
-                    item => item.name === userName
-                )
-                user ? user.present = present : null
-            },
-            showPresent () {
-                console.log(
-                    users.filter(
-                        item => item.present
-                    )
-                )
-
-            },
-            showAbsent () {
-                console.log(
-                    users.filter(
-                        item => !item.present
-                    )
-                )
-            }
-        }
-    }
-)( [ "Иван", "Дмитрий", "Степан", "Михаил" ] )
-users.setUserPresent('Иван', '+')
-users.setUserPresent('Степан', true)
-			</textarea>
-			<div class="result2">
-					
+				<pre class="text1-2"></pre>
 			</div>
-			<input type="button" class="func1" value="Выполнить код" onclick="document.querySelector('.result2').textContent = 'Watch in DEV Tools'"/>
-			
+			<div class="result2"></div>
+
+		</div>
+		<input type="button" class="func1" value="Run script" onclick="document.querySelector('.result2').textContent = 'Watch in DEV Tools'"/>
+
+
+		<div class="main_article">
 			<p>
-				Дополнительно ( 5 балла )
+				Additional ( 5 points )
 			</p>
-			<textarea disabled="disabled" rows="20" class="text2">
-
-	Допилите код функции changeClass, которая парсит все стили страницы в поисках заданного класса, а затем меняет атрибуты стиля этого класса
-
-let changeClass = ( classname, styleString ) => ( 
-   ...
-).length > 0 ? console.log ( "found" ) : 
-    document.head.appendChild (
-        document.createElement ( "style" )
-    ).textContent = `.${classname} {${styleString}}`
-После вызова функции:
-
-changeClass ( "second-level-menu", "background-color: red!important;" )
-в консоли страницы, где есть элементы с классом second-level-menu, у всех элементов этого класса цвет фона должен измениться на красный
-			</textarea>
-			
-				
-			<textarea disabled="disabled" rows="20" class="text1">
-let changeClass = ( classname, styleString ) =>
-    Array.from(document.styleSheets).filter(
-        sheet => !sheet.href
-    ).forEach(
-        sheet =>
-            Array.from(sheet.cssRules)
-                .filter(
-                    rule => rule.selectorText === classname
-                ).forEach(
-                rule => rule.style[styleString.split(':')[0]] =   styleString.split(':')[1]
-            )
-    )
-changeClass ( "result3", "opacity:0" )
-			</textarea>
-			<div class="result3">
-					
+			<div class="text0">
+				<pre class="text2-3"></pre>
+				<pre class="text1-3"></pre>
 			</div>
-				
-			<input type="button" class="func1" value="Выполнить код" onclick="func3()"/>
-			<input type="button" class="func1" value="Обратно" onclick="func4()"/>
-				
+			<form  action="https://www.youtube.com/">
+				<button class="func1" type="submit">Check script on Youtube Website</button>
+			</form>
 			
-			<figure>
-				<img src="images/andriichuk.png" alt="logo_js">
-				
-			</figure>
 
 		</div>
 		
 
-	</section>
-<script type="text/javascript" src="../js/nemu.js"></script>
-	<div class="footer">
-				<div class="link-cont">
-					<div class="link">
-						<a href="https://uk-ua.facebook.com/">
-							<div class="icon-facebook">	
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.instagram.com/?hl=ru">
-							<div class="icon-instagram">
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.youtube.com/">
-							<div class="icon-youtube">
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.linkedin.com/">
-							<div class="icon-linkedin2">
-							</div>
-						</a>
-					</div>
-					
-				</div>
-			</div>
+		<figure>
+			<img src="images/vito.png" alt="logo_js">
+
+		</figure>
+
+	</div>
 </body>
 </html>

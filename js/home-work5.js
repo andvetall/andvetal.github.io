@@ -1,5 +1,22 @@
 // 1 (3 points)
-function func1() {
+let one = `Напилить код функции modificator, такой, чтобы в результате работы кода:
+
+function sampleFunc () {
+    console.log ( '{arguments.callee.name}: {arguments[0]} | {arguments[1]}' )
+}
+
+function modificator ( func ) {
+    ...
+}
+
+testFunc = modificator( sampleFunc )
+
+testFunc()
+в консоли было:
+
+sampleFunc: test | sample`
+
+function homeWorkOne() {
 
     function sampleFunc () {
         alert ( `${arguments.callee.name}: ${arguments[0]} | ${arguments[1]}` )
@@ -13,7 +30,23 @@ function func1() {
 
 
 // 2 (4 points)
-function func2() {
+let two = `Напилить код функции modificator, такой, чтобы в результате работы кода:
+
+function sampleFunc () {
+    console.info ( \`Symbols in my code: {arguments.callee + 0}\` )
+}
+
+function modificator ( func ) {
+    ...
+}
+
+modificator( sampleFunc )
+
+sampleFunc()
+в консоль было выведено число символов в коде функции sampleFunc, т.е.:
+
+Symbols in my code: 93`
+function homeWorkTwo() {
 
     function sampleFunc () {
         alert ( `Symbols in my code: ${arguments.callee + 0}` )
@@ -29,7 +62,26 @@ function func2() {
 
 
 // 3 (5 points)
-function func3() {
+let three = `Напилите код функции generateError, такой, чтобы в результате работы кода:
+
+function testArguments () {
+    function generateError ( numArgs ) {
+        ...
+    }
+    try {
+        arguments.length >= 3 ? null : generateError ( arguments.length )
+    } 
+    catch ( err ) {
+        console.error ( \`{err.name}: {err.message}\\n{err.stack}\` )
+    }
+}
+
+testArguments ( "Google" )
+в консоли было сообщение от ошибке:
+
+► Application: Invalid arguments
+Function needs 3 arguments, but only 1 present`
+function homeWorkThree() {
 
     function testArguments() {
         function generateError(numArgs) {
@@ -49,4 +101,11 @@ function func3() {
     }
 
     testArguments("Google")
+}
+
+function showCode(param1, param2){
+    document.querySelector(param2).innerHTML = param1.toLocaleString()
+}
+function showTask(param1, param2){
+    document.querySelector(param1).innerHTML = param2
 }

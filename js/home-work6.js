@@ -1,11 +1,21 @@
-
-
 // 1
-function func1 () {
+let one = `Создайте массив tags с именами валидных тегов HTML5
+
+Теперь создайте массив classes с именами классов
+
+( число элементов в массиве classes должно быть не меньше, чем число элементов массива tags )
+
+Создайте элемент style и вставьте его в head документа
+
+Добавьте контент элемента style с описанием классов, имена которых находятся в массиве classes
+
+Итерируйте массив tags, создавая соответствующие элементы и вставляя их на страницу, добавляя каждому элементу класс из массива classes`
+function homeWorkOne () {
     var tags = ["header", "div", "div", "p", "footer"]
     var classes = ["top", "logo", "container", "parag", "bottom"]
 
-    var style = document.head.appendChild(document.createElement('style'))
+    var style = document.head.appendChild(
+        document.createElement('style'))
     style.innerHTML =
         `
 .top{ width 100%; height: 100px; background-color: green; }
@@ -16,7 +26,8 @@ function func1 () {
 `
 
     for (var tag in tags) {
-        document.querySelector('.result1').appendChild(document.createElement(`${tags[tag]}`))
+        document.querySelector('.result1').appendChild(
+            document.createElement(`${tags[tag]}`))
             .setAttribute('class', `${classes[tag]}`)
     }
     }
@@ -24,7 +35,12 @@ function func1 () {
 
 
     // 2
-function func2 () {
+let two = `Результат должен быть аналогичен тому, что получится в предыдущем упражнении
+
+Однако исходный массив tags должен быть массивом объектов, каждый из которых содержит не только имя тега элемента, но и его атрибуты, а так же хотя бы один обработчик события
+
+Таким образом, массив classes нам уже не нужен, но кроме стилизации элементов нужно еще добавить их контент, используя как атрибуты тегов, так и свойства элементов DOM`
+function homeWorkTwo() {
     var tags = [
         {
             name: 'header',
@@ -52,7 +68,7 @@ function func2 () {
         {
             name: 'img',
             attrs: {
-                src: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png',
+                src: 'http://www.primusdatabase.com/images/a/a0/Collideratom.png',
                 title: 'Title'
             }
         },
@@ -111,7 +127,8 @@ function func2 () {
             return Math.round(Math.random() * 255)
         }
 
-        event.target.style.color = `rgb(${randomColor()},${randomColor()},${randomColor()})`
+        event.target.style.color =
+            `rgb(${randomColor()},${randomColor()},${randomColor()})`
     }
 
     for (var tag of tags) {
@@ -127,8 +144,22 @@ function func2 () {
 }
 
 // 3
-function func3 () {
-    var style = document.head.appendChild(document.createElement('style'))
+let three = `Напилить код, который выбирает все элементы-потомки body ( :warning: кроме элементов script ) и добавляет им класc:
+
+.redBack {
+    background-color: red!important;
+}
+Альтернативный вариант - выбрать все заранее заданные элементы:
+
+var tags = [ "header", "footer", "main", "div", "p" ]
+Запустить код в консоли любой страницы
+
+Подсказка: используйте методы объекта classList
+
+`
+function homeWorkThree() {
+    var style = document.head.appendChild(
+        document.createElement('style'))
 
     style.textContent = `
     .redBack {
@@ -138,4 +169,11 @@ function func3 () {
         elem.tagName === "SCRIPT" ? null :
             elem.className = "redBack"
     }
+}
+
+function showCode(param1, param2){
+    document.querySelector(param2).innerHTML = param1.toLocaleString()
+}
+function showTask(param1, param2){
+    document.querySelector(param1).innerHTML = param2
 }

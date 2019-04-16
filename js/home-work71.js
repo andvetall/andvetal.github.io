@@ -1,7 +1,13 @@
 //1
 
+let one = `pure JS
 
-function func1() {
+Создайте элемент 'p', при клике на котором появляется картинка размером 100px
+
+При наведении указателя мышки на картинку ее размер должен плавно увеличиваться до 200px
+
+При клике на картинке она должна исчезать`
+function homeWorkOne() {
 
 
     var parag = document.querySelector('.result1').appendChild(document.createElement('p'))
@@ -9,23 +15,54 @@ function func1() {
     parag.style = `color: black;`
     var image = document.createElement('img')
     image.src = "https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/12/11/naturo-monkey-selfie.jpg?w968h681"
-    image.style = `height: 100px; width: 100px;`
+    image.style = `height: 100px;`
     parag.onclick = function (event) {
         event.target ? document.querySelector('.result1').appendChild(image) : null
     }
-    image.addEventListener('mouseover', function (event) {
+    image.addEventListener('mouseenter', function (event) {
         event.target ? image.style = `height: 200px; transition: all 2s;` : null
     })
-    image.addEventListener('mouseout', function (event) {
+    image.addEventListener('mouseleave', function (event) {
         event.target ? image.style = `height: 100px; transition: all 2s;` : null
     })
     image.addEventListener('click', function (event) {
         event.target ? image.remove() : null
     })
-
-// 2
 }
-function func2() {
+// 2
+let two = `Создайте коллекцию вложенных друг в друга html-элементов с обработчиками событий click, mouseover, mouseout
+
+var collection = []
+
+function over ( event ) {
+    ...
+}
+function out ( event ) {
+    ...
+}
+function clickHandler ( event ) {
+    ...
+}
+
+[ "first", "second", "third", "fourth" ].forEach (
+    function ( tag, index, arr  ) {
+        ...
+    }
+)
+Установите атрибуты стиля width и height такие, чтобы вложенные элементы были меньше размером, чем родитель
+
+Установите значение #ff00ff50 атрибута background-color каждому элементу
+
+Установите значение dotted 1px yellow; атрибута border каждому элементу
+
+При наступлении события mouseover значение атрибута background-color должно меняться на #ffff0050
+
+При наступлении события mouseout атрибуту background-color должно устанавливаться исходное значение
+
+При наступлении события click элемент должен быть удален
+
+При наведении мышки на элемент должна появляться подсказка с его именем ( "first", "second", "third", "fourth" )`
+function homeWorkTwo() {
     var elemData = {
         name: "div",
         attrs: {
@@ -73,7 +110,25 @@ function func2() {
 }
 
 //3
-function func3() {
+let three = `Условия предыдущего задания изменить так:
+
+var collection = []
+
+function enter ( event ) {
+    ...
+}
+function leave ( event ) {
+    ...
+}
+function clickHandler ( event ) {
+    ...
+}
+
+[ 1, 2, 3, 4, 5, 6, 7 ].forEach (
+    ...
+)
+ при удалении элемента его потомки должны оставаться`
+function homeWorkThree() {
     var elemData = {
         name: "div",
         attrs: {
@@ -119,4 +174,11 @@ function func3() {
     for (var x = 1; x < elemData.attrs.title.length; x++) {
         collection[x] = insert(x, collection[x - 1])
     }
+}
+
+function showCode(param1, param2){
+    document.querySelector(param2).innerHTML = param1.toLocaleString()
+}
+function showTask(param1, param2){
+    document.querySelector(param1).innerHTML = param2
 }

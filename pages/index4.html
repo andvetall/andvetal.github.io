@@ -8,205 +8,178 @@
 	<script type="text/javascript" src="../js/home-work4.js"></script>
 	
 </head>
-<body>
+<body onload="
+		showCode(homeWorkOne, '.text1-1'),
+		showCode(homeWorkThree, '.text1-3'),
+		showTask('.text2-1', one),
+		showTask('.text2-3', three)">
 
-	<header class="top_page">
-		<div class="banner1">
-			<h1>Home Works</h1>
-		</div>
-	</header>
-	<section class="big_block">
+	
+	<div class="big_block">
 
 		<nav class="navigation">
-			<div class="sidebar">
-				<h2 class="sidebar_top">
-					Choose Home Work	
-				</h2>
-				<ul class="list">
-					<li>
-						<a href="index1.html">
-							Home work - 1
-						</a>
-					</li>
-					<li>
-						<a href="index2.html">
-							Home Work - 2
-						</a>
-					</li>
-					<li>
-						<a href="index3.html">
-							Home Work - 3
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 4
-						</a>
-					</li>
-					<li>
-						<a href="index5.html">
-							Home Work - 5
-						</a>
-					</li>
-					<li>
-						<a href="index6.html">
-							Home Work - 6
-						</a>
-					</li>
-					<li>
-						<a href="index7.html">
-							Home Work - 7
-						</a>
-					</li>
-					<li>
-						<a href="index8.html">
-							Home Work - 8
-						</a>
-					</li>
-					<li>
-						<a href="index9.html">
-							Home Work - 9
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 10
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 11
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 12
-						</a>
-					</li>
-				</ul>
-				<hr>
-				
-				
-				<a class="main_page_link" href="../index.html">
-					Go to main page!
-				</a>
-			</div>
-
-			<!-- <div class="button1">
-				<button>
-					RESERVE YOUR STAY TODAY!
-				</button>
-				
-			</div> -->
 			
+			<ul>
+				<li id="menu"><a href="#">Menu</a></li>
+				<li class="list"><a href="#">JS</a>
+					<ul>
+						<li>
+							<a href="index1.html">
+								Home work - 1
+							</a>
+						</li>
+						<li>
+							<a href="index2.html">
+								Home Work - 2
+							</a>
+						</li>
+						<li>
+							<a href="index3.html">
+								Home Work - 3
+							</a>
+						</li>
+						<li>
+							<a href="index4.html">
+								Home Work - 4
+							</a>
+						</li>
+						<li>
+							<a href="index5.html">
+								Home Work - 5
+							</a>
+						</li>
+						<li>
+							<a href="index6.html">
+								Home Work - 6
+							</a>
+						</li>
+						<li>
+							<a href="index7.html">
+								Home Work - 7
+							</a>
+						</li>
+						<li>
+							<a href="index8.html">
+								Home Work - 8
+							</a>
+						</li>
+						<li>
+							<a href="index9.html">
+								Home Work - 9
+							</a>
+						</li>
+						<li>
+							<a href="index10.html">
+								Home Work - 10
+							</a>
+						</li>
+						<li>
+							<a href="index11.html">
+								Home Work - 11
+							</a>
+						</li>
+						<li>
+							<a href="index12.html">
+								Home Work - 12
+							</a>
+						</li>
+						<li>
+							<a href="index13.html">
+								Home Work - 13
+							</a>
+						</li>
+						<li>
+							<a href="index13.html">
+								Home Work - 13
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="list"><a href="#">MarkUp</a></li>
+				<li class="list"><a href="#">Soсials</a>
+
+					<ul>	
+						<li>
+							<a href="https://uk-ua.facebook.com/">
+								<div class="icon-facebook">	
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/?hl=ru">
+								<div class="icon-instagram">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/">
+								<div class="icon-youtube">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/">
+								<div class="icon-linkedin2">
+								</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="list"><a href="../index.html">To main</a></li>
+			</ul>
 		</nav>
 
+
+
+
+
 		<div class="main_article">
-			<h3>
-				Andriichuk Vitalii
-			</h3>
-			<p class="italic_p">
-				Home Work 4
-			</p>
 			<p>
-				Обязательная часть ( 3 балла )
+				Main Part ( 3 points )
 			</p>
-			<textarea disabled="disabled" rows="15" class="text2">
-	
-	Создайте объект, свойства которого описывают содержимое дамской сумочки
-Создайте метод объекта, позволяющий удалить что-то из сумочки
-Создайте метод объекта, позволяющий положить что-то в сумочку
-			</textarea>
-			
-			<textarea disabled="disabled" rows="20" class="text1">
-var womansBag = {
-    content: [
-        "Passpor",
-        "Lipstick",
-        "Mobile",
-        "Mirrow",
-        "Notepad",
-        "Tablet"
-    ],
-    addItem: function ( item ) {
-        this.content.push ( item )
-    } ,
-    deleteITEM: function ( num ) {
-        this.content.splice ( num, 1 )
-    }
-}
-womansBag.addItem("Vallet")
-console.log (womansBag)
-			</textarea>
-			<button class="func1" value="OK" onclick="alert(womansBag.content)">Show Bag's Content</button>
-			<button class="func1" value="OK" onclick="womansBag.addItem('AddedItem')">addContent</button>
-			<button class="func1" value="OK" onclick="womansBag.deleteITEM(1)">removeContent</button>
-			
+			<div class="text0">
+				<pre class="text2-1"></pre>
+
+				<pre class="text1-1"></pre>
+			</div>
+
+		</div>
+		<input type="button" class="func1" value="Run script" onclick="homeWorkOne();">
+
+
+
+		<!-- <div class="main_article">
 			<p>
-				Дополнительно ( 5 балла )
+				Additional ( 4 points )
 			</p>
-			<textarea disabled="disabled" rows="15" class="text2">
-	
-	Объявите конструктор, который создает экземпляры с унаследованным методом addProperty
-Метод addProperty должен принимать два аргумента:
-имя свойства
-значение свойства
-и добавлять экземпляру новое свойство с указанным именем и значением
-			</textarea>
-			
-			<textarea disabled="disabled" rows="20" class="text1">
-function testConstructor(age, hobby){
-    this.age = age || 50
-    this.hobby = hobby || "Tenis"
-    this.addProperty = function( name, value){
-    	this[name] = value
-    }
-}
-var test = new testConstructor(20, "tennis")
-test.addProperty("masha", "married")
-			</textarea>
-			<button class="func1" value="OK" onclick="alert(testConstructor)">Show Constructor</button>
-			<button class="func1" value="OK" onclick="test.addProperty('Masha', 'Married')">addProperty(Masha, Married)</button>
-			<button class="func1" value="OK" onclick="alert(test.Masha)">Show Property of Masha</button>
-			
-			<figure>
-				<img src="images/andriichuk.png" alt="logo_js">
-				
-			</figure>
+			<div class="text0">
+				<pre class="text2-2"></pre>
+
+				<pre class="text1-2"></pre>
+			</div>
+
+		</div>
+		<input type="button" class="func1" value="Run script" onclick="homeWorkTwo()" >
+ -->
+
+		<div class="main_article">
+			<p>
+				Additional ( 5 points )
+			</p>
+			<div class="text0">
+				<pre class="text2-3"></pre>
+				<pre class="text1-3"></pre>
+			</div>
+			<input type="button" class="func1" value="Run script" onclick="homeWorkThree()" >
 
 		</div>
 		
 
-	</section>
-<script type="text/javascript" src="../js/nemu.js"></script>
-<div class="footer">
-				<div class="link-cont">
-					<div class="link">
-						<a href="https://uk-ua.facebook.com/">
-							<div class="icon-facebook">	
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.instagram.com/?hl=ru">
-							<div class="icon-instagram">
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.youtube.com/">
-							<div class="icon-youtube">
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.linkedin.com/">
-							<div class="icon-linkedin2">
-							</div>
-						</a>
-					</div>
-					
-				</div>
-			</div>
+		<figure>
+			<img src="images/vito.png" alt="logo_js">
+
+		</figure>
+
+	</div>
 </body>
 </html>

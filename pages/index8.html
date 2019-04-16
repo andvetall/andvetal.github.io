@@ -7,276 +7,182 @@
 	<title>HomeWorks-js</title>
 	<script type="text/javascript" src="../js/home-work8.js"></script>
 </head>
-<body>
+<body onload="
+		showCode(homeWorkOne, '.text1-1'),
+		showCode(homeWorkTwo, '.text1-2',), 
+		showCode(homeWorkThree, '.text1-3'),
+		showTask('.text2-1', one),
+		showTask('.text2-2', two),
+		showTask('.text2-3', three)">
 
-	<header class="top_page">
-		<div class="banner1">
-			<h1>Home Works</h1>
-		</div>
-	</header>
-	<section class="big_block">
+	
+	<div class="big_block">
 
 		<nav class="navigation">
-		
-			<div class="sidebar">
-				<h2 class="sidebar_top">
-					Choose Home Work	
-				</h2>
-				<ul class="list">
-					<li>
-						<a href="index1.html">
-							Home work - 1
-						</a>
-					</li>
-					<li>
-						<a href="index2.html">
-							Home Work - 2
-						</a>
-					</li>
-					<li>
-						<a href="index3.html">
-							Home Work - 3
-						</a>
-					</li>
-					<li>
-						<a href="index4.html">
-							Home Work - 4
-						</a>
-					</li>
-					<li>
-						<a href="index5.html">
-							Home Work - 5
-						</a>
-					</li>
-					<li>
-						<a href="index6.html">
-							Home Work - 6
-						</a>
-					</li>
-					<li>
-						<a href="index7.html">
-							Home Work - 7
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 8
-						</a>
-					</li>
-					<li>
-						<a href="index9.html">
-							Home Work - 9
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 10
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 11
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 12
-						</a>
-					</li>
-				</ul>
-				<hr>
-				
-				
-				<a class="main_page_link" href="../index.html">
-					Go to main page!
-				</a>
-			</div>
+			
+			<ul>
+				<li id="menu"><a href="#">Menu</a></li>
+				<li class="list"><a href="#">JS</a>
+					<ul>
+						<li>
+							<a href="index1.html">
+								Home work - 1
+							</a>
+						</li>
+						<li>
+							<a href="index2.html">
+								Home Work - 2
+							</a>
+						</li>
+						<li>
+							<a href="index3.html">
+								Home Work - 3
+							</a>
+						</li>
+						<li>
+							<a href="index4.html">
+								Home Work - 4
+							</a>
+						</li>
+						<li>
+							<a href="index5.html">
+								Home Work - 5
+							</a>
+						</li>
+						<li>
+							<a href="index6.html">
+								Home Work - 6
+							</a>
+						</li>
+						<li>
+							<a href="index7.html">
+								Home Work - 7
+							</a>
+						</li>
+						<li>
+							<a href="index8.html">
+								Home Work - 8
+							</a>
+						</li>
+						<li>
+							<a href="index9.html">
+								Home Work - 9
+							</a>
+						</li>
+						<li>
+							<a href="index10.html">
+								Home Work - 10
+							</a>
+						</li>
+						<li>
+							<a href="index11.html">
+								Home Work - 11
+							</a>
+						</li>
+						<li>
+							<a href="index12.html">
+								Home Work - 12
+							</a>
+						</li>
+						<li>
+							<a href="index13.html">
+								Home Work - 13
+							</a>
+						</li>
+						<li>
+							<a href="index13.html">
+								Home Work - 13
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="list"><a href="#">MarkUp</a></li>
+				<li class="list"><a href="#">Soсials</a>
 
+					<ul>	
+						<li>
+							<a href="https://uk-ua.facebook.com/">
+								<div class="icon-facebook">	
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/?hl=ru">
+								<div class="icon-instagram">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/">
+								<div class="icon-youtube">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/">
+								<div class="icon-linkedin2">
+								</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="list"><a href="../index.html">To main</a></li>
+			</ul>
 		</nav>
 
+
+
+
+
 		<div class="main_article">
-			<h3>
-				Andriichuk Vitalii
-			</h3>
-			<p class="italic_p">
-				Home Work 8
-			</p>
 			<p>
-				Обязательная часть ( 3 балла )
+				Main Part ( 3 points )
 			</p>
-			<textarea disabled="disabled" rows="15" class="text2">
+			<div class="text0">
+				<pre class="text2-1"></pre>
 
-Напилите код, выводящий на страницу текущее время в течение 100 секунд
-			</textarea>
-			
-			<textarea disabled="disabled" rows="20" class="text1">
-
-var clock = document.body.appendChild(
-    document.createElement('h3')
-)
-
-
-for(var x = 0; x < 100; x++){
-    (function(arg){
-        return function(){
-            setTimeout(
-                () => clock.innerText = new Date().toLocaleString().split(', ')[1],
-                1000 * arg
-            )
-        }
-    })(x)()
-}
-			</textarea>
-            
-			<div class="result1"></div>
-                
-			<input type="button" class="func1" value="Выполнить код" onclick="func1()"/>
-			
-			<p>
-				Дополнительно ( 4 балла )
-			</p>
-			<textarea disabled="disabled" rows="15" class="text2">
-	
-	Завершите код рекурсивной функции typeMessage так, чтобы при ее вызове на страницу выводился один символ в секунду
-
-var typeMessage = ( function ( velocity ) {
-    let container = document.getElementById ( "demo" ) ?
-        document.getElementById ( "demo" ) :
-        document.body.appendChild (
-            document.createElement ( "h3" )
-        )
-    container.style = `color: magenta;`
-    var index = 0
-    return function ( message ) {
-        ...
-    }
-})( 1 )
-
-typeMessage ( `Welcome to the hell` )
-			</textarea>
-			
-			<textarea disabled="disabled" rows="20" class="text1">
-var typeMessage = ( function ( velocity ) {
-    let container = document.getElementById ( "demo" ) ?
-        document.getElementById ( "demo" ) :
-        document.body.appendChild (
-            document.createElement ( "h3" )
-        )
-    container.style = `color: magenta;`
-    var index = 0
-    return function ( message ) {
-        var num = index
-        setTimeout(
-            () => container.textContent += message[num]
-            ,1000 * velocity * num)
-        index++ < message.length -1 ? typeMessage(message) : null
-    }
-})( 1 )
-
-typeMessage ( `Welcome to the hell` )
-			</textarea>
-			<div class="result2">
-					
+				<pre class="text1-1"></pre>
 			</div>
-			<input type="button" class="func1" value="Выполнить код" onclick="func2()"/>
-			
+			<div class="result1"></div>
+
+		</div>
+		<input type="button" class="func1" value="Run script" onclick="homeWorkOne();">
+
+
+
+		<div class="main_article">
 			<p>
-				Дополнительно ( 5 балла )
+				Additional ( 4 points )
 			</p>
-			<textarea disabled="disabled" rows="20" class="text2">
+			<div class="text0">
+				<pre class="text2-2"></pre>
 
-	Нужно сделать так, чтобы у всех экзепляров, созданных конструктором User, был унаследованный метод counter(), который считает созданные конструктором экземпляры
+				<pre class="text1-2"></pre>
+			</div>
+			<div class="result2"></div>
 
-Каждый вызов конструктора увеличивает счетчик экземпляров на 1 и помещать новое значение счетчика в свойство id созданного экземпляра:
-
-function User ( name ) {
-    this.name = name
-    this.id = this.counter()
-}
-
-...
-
-var users = [
-    new User ( "Семен" ),
-    new User ( "Антон" ),
-    new User ( "Демьян" ),
-    new User ( "Василий" )
-]
-:warning: После выполнения кода:
-
-users[1].id = users[1].counter()
-свойство id экземпляра не должно измениться, так же, как и значение счетчика
+		</div>
+		<input type="button" class="func1" value="Run script" onclick="homeWorkTwo()" >
 
 
-			</textarea>
-			
-				
-			<textarea disabled="disabled" rows="20" class="text1">
-function User ( name ) {
-    this.name = name,
-        this.id = this.counter()
-}
-
-User.prototype.counter = (function(){
-    var id = 0
-    return function(){
-        return typeof this.id === 'number' ? id : id++
-    }
-})()
-
-var users = [
-    new User ( "Семен" ),
-    new User ( "Антон" ),
-    new User ( "Демьян" ),
-    new User ( "Василий" )
-    ]
-			</textarea>
-			
-				
-			<button class="func1" value="OK" onclick="alert(`${users[0].name} - id ${users[0].id}`)">Check Id of "Семен"</button>
-			<button class="func1" value="OK" onclick="alert(`${users[1].name} - id ${users[1].id}`)">Check Id of "Антон"</button>
-			<button class="func1" value="OK" onclick="alert(`${users[2].name} - id ${users[2].id}`)">Check Id of "Демьян"</button>
-			<button class="func1" value="OK" onclick="alert(`${users[3].name} - id ${users[3].id}`)">Check Id of "Василий"</button>
-				
-			
-			<figure>
-				<img src="images/andriichuk.png" alt="logo_js">
-				
-			</figure>
+		<div class="main_article">
+			<p>
+				Additional ( 5 points )
+			</p>
+			<div class="text0">
+				<pre class="text2-3"></pre>
+				<pre class="text1-3"></pre>
+			</div>
+			<input type="button" class="func1" value="Run script" onclick="homeWorkThree()" >
 
 		</div>
 		
 
-	</section>
-<script type="text/javascript" src="../js/nemu.js"></script>
-<div class="footer">
-				<div class="link-cont">
-					<div class="link">
-						<a href="https://uk-ua.facebook.com/">
-							<div class="icon-facebook">	
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.instagram.com/?hl=ru">
-							<div class="icon-instagram">
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.youtube.com/">
-							<div class="icon-youtube">
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.linkedin.com/">
-							<div class="icon-linkedin2">
-							</div>
-						</a>
-					</div>
-					
-				</div>
-			</div>
+		<figure>
+			<img src="images/vito.png" alt="logo_js">
+
+		</figure>
+
+	</div>
 </body>
 </html>

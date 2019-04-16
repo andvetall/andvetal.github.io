@@ -8,151 +8,177 @@
 	<script type="text/javascript" src="../js/home-work2.js"></script>
 	
 </head>
-<body>
+<!-- <body onload="showCode(homeWorkOne, '.text1-1'), showCode(homeWorkTwo, '.text1-2')">
 
-	<header class="top_page">
-		<div class="banner1">
-			<h1>Home Works</h1>
-		</div>
-	</header>
-	<section class="big_block">
+	
+	<div class="big_block">
 
 		<nav class="navigation">
-			<div class="sidebar">
-				<h2 class="sidebar_top">
-					Choose Home Work	
-				</h2>
-				<ul class="list">
-					<li>
-						<a href="index1.html">
-							Home work - 1
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 2
-						</a>
-					</li>
-					<li>
-						<a href="index3.html">
-							Home Work - 3
-						</a>
-					</li>
-					<li>
-						<a href="index4.html">
-							Home Work - 4
-						</a>
-					</li>
-					<li>
-						<a href="index5.html">
-							Home Work - 5
-						</a>
-					</li>
-					<li>
-						<a href="index6.html">
-							Home Work - 6
-						</a>
-					</li>
-					<li>
-						<a href="index7.html">
-							Home Work - 7
-						</a>
-					</li>
-					<li>
-						<a href="index8.html">
-							Home Work - 8
-						</a>
-					</li>
-					<li>
-						<a href="index9.html">
-							Home Work - 9
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 10
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 11
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 12
-						</a>
-					</li>
-				</ul>
-				<hr>
-				
-				
-				<a class="main_page_link" href="../index.html">
-					Go to main page!
-				</a>
-			</div>
-
-			<!-- <div class="button1">
-				<button>
-					RESERVE YOUR STAY TODAY!
-				</button>
-				
-			</div> -->
 			
+			<ul>
+				<li id="menu"><a href="#">Menu</a></li>
+				<li class="list"><a href="#">JS</a>
+					<ul>
+						<li>
+							<a href="index1.html">
+								Home work - 1
+							</a>
+						</li>
+						<li>
+							<a href="index2.html">
+								Home Work - 2
+							</a>
+						</li>
+						<li>
+							<a href="index3.html">
+								Home Work - 3
+							</a>
+						</li>
+						<li>
+							<a href="index4.html">
+								Home Work - 4
+							</a>
+						</li>
+						<li>
+							<a href="index5.html">
+								Home Work - 5
+							</a>
+						</li>
+						<li>
+							<a href="index6.html">
+								Home Work - 6
+							</a>
+						</li>
+						<li>
+							<a href="index7.html">
+								Home Work - 7
+							</a>
+						</li>
+						<li>
+							<a href="index8.html">
+								Home Work - 8
+							</a>
+						</li>
+						<li>
+							<a href="index9.html">
+								Home Work - 9
+							</a>
+						</li>
+						<li>
+							<a href="index10.html">
+								Home Work - 10
+							</a>
+						</li>
+						<li>
+							<a href="index11.html">
+								Home Work - 11
+							</a>
+						</li>
+						<li>
+							<a href="index12.html">
+								Home Work - 12
+							</a>
+						</li>
+						<li>
+							<a href="index13.html">
+								Home Work - 13
+							</a>
+						</li>
+						<li>
+							<a href="index13.html">
+								Home Work - 13
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="list"><a href="#">MarkUp</a></li>
+				<li class="list"><a href="#">Soсials</a>
+
+					<ul>	
+						<li>
+							<a href="https://uk-ua.facebook.com/">
+								<div class="icon-facebook">	
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/?hl=ru">
+								<div class="icon-instagram">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/">
+								<div class="icon-youtube">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/">
+								<div class="icon-linkedin2">
+								</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="list"><a href="../index.html">To main</a></li>
+			</ul>
 		</nav>
 
+
+
+
+
 		<div class="main_article">
-			<h3>
-				Andriichuk Vitalii
-			</h3>
-			<p class="italic_p">
-				Home Work 2
-			</p>
 			<p>
-				Обязательная часть ( 3 балла )
+				Main Part ( 3 points )
 			</p>
-			<textarea disabled="disabled" rows="15" class="text2">
-	
+			<div class="text0">
+				<pre class="text2">
 	Создайте пустой массив letters
 Создайте строку из нескольких слов, например "Backend As A Service"
 Напилите код, который разбивает эту строку на массив слов и пушит в массив letters первый символ каждого слова
 Выведите результат в консоль
 Объедините все элементы массива letters в одну строку и выведите ее в консоль
-			</textarea>
-			
-			<textarea disabled="disabled" rows="20" class="text1">
-var letters = []
-var str = "Backend As A Service"
-newStr = str.split(' ')
-for (var i = 0; i < newStr.length; i++){
-    letters.push((newStr[i].charAt(0)))
-}
-			</textarea>
-			<input type="button" class="func1" value="Выполнить код" onclick="homeWorkTwoOne();">
-			
+					
+
+				</pre>
+
+				<pre class="text1-1"></pre>
+			</div>
+
+		</div>
+		<input type="button" class="func1" value="Run script" onclick="homeWorkOne();">
+
+
+
+		<div class="main_article">
 			<p>
-				Дополнительно ( 4 балла )
+				Additional ( 4 points )
 			</p>
-			<textarea disabled="disabled" rows="15" class="text2">
-				
+			<div class="text0">
+				<pre class="text2">
 	Объявите функцию с одним формальным параметром, которая проверяет тип данных переданного аргумента и:
 если это число, возвращает текущую дату в формате "20.02.2019, 13:21:51"
 в противном случае возвращает строку "Неверный тип данных"
 Вызовите функцию
-			</textarea>
-			
-			<textarea disabled="disabled" rows="20" class="text1">
-function func(param) {
-    console.log ( typeof param === 'number' ? new Date().toLocaleString()  : 'Неверный тип данных' )
-}
-			</textarea>
-			<input type="button" class="func1" value="Выполнить код" onclick="homeWorkTwoTwo(5), homeWorkTwoTwo('qwerty');">
-			
+					
+
+				</pre>
+
+				<pre class="text1-2"></pre>
+			</div>
+
+		</div>
+		<input type="button" class="func1" value="Run script" onclick="homeWorkTwo(5), homeWorkTwo()" >
+
+
+		<div class="main_article">
 			<p>
-				Дополнительно ( 5 балла )
+				Additional ( 5 points )
 			</p>
-			<textarea disabled="disabled" rows="15" class="text2">
-	
+			<div class="text0">
+				<pre class="text2">
 	Откройте Chrome DevTools 
 В панели навигации найдите файл index01.js ( в папке js/ )
 Установите breakpoint на строке вызова функции insertUserText ( строка 10 )
@@ -161,51 +187,225 @@ function func(param) {
 Ваша задача: обезопасить свою страницу от внедрения вредоносного кода с помощью функции валидации testUserText
 функция должна вывести на страницу текст пользователя безопасным способом
 ( т.е. текст должен быть выведен "as is" ( как есть ), но код не должен быть выполнен )
-			</textarea>
-			<p><a href="https://garevna.github.io/js-samples/#01">Link</a></p>
-			<div class="home_work_image">
+
+					
+
+				</pre>
+			<div class="text1-3">
 				<img src="images/HW_2.png" >
 			</div>
+			</div>
+
+		</div>
+		<form  action="https://garevna.github.io/js-samples/#01">
+			<button class="func1" type="submit">Link</button>
+		</form>
+		
+
+
+
+
+
+		<figure>
+			<img src="images/vito.png" alt="logo_js">
+
+		</figure>
+
+	</div>
+
+
+
+	<script type="text/javascript" src="../js/nemu.js"></script>
+
+</body>
+
+
+
+
+
+
+
+
+ -->
+
+<body onload="
+		showCode(homeWorkOne, '.text1-1'),
+		showCode(homeWorkTwo, '.text1-2',), 
+		showTask('.text2-1', one),
+		showTask('.text2-2', two),
+		showTask('.text2-3', three)">
+
+	
+	<div class="big_block">
+
+		<nav class="navigation">
 			
-			
-			<figure>
-				<img src="images/andriichuk.png" alt="logo_js">
-				
-			</figure>
+			<ul>
+				<li id="menu"><a href="#">Menu</a></li>
+				<li class="list"><a href="#">JS</a>
+					<ul>
+						<li>
+							<a href="index1.html">
+								Home work - 1
+							</a>
+						</li>
+						<li>
+							<a href="index2.html">
+								Home Work - 2
+							</a>
+						</li>
+						<li>
+							<a href="index3.html">
+								Home Work - 3
+							</a>
+						</li>
+						<li>
+							<a href="index4.html">
+								Home Work - 4
+							</a>
+						</li>
+						<li>
+							<a href="index5.html">
+								Home Work - 5
+							</a>
+						</li>
+						<li>
+							<a href="index6.html">
+								Home Work - 6
+							</a>
+						</li>
+						<li>
+							<a href="index7.html">
+								Home Work - 7
+							</a>
+						</li>
+						<li>
+							<a href="index8.html">
+								Home Work - 8
+							</a>
+						</li>
+						<li>
+							<a href="index9.html">
+								Home Work - 9
+							</a>
+						</li>
+						<li>
+							<a href="index10.html">
+								Home Work - 10
+							</a>
+						</li>
+						<li>
+							<a href="index11.html">
+								Home Work - 11
+							</a>
+						</li>
+						<li>
+							<a href="index12.html">
+								Home Work - 12
+							</a>
+						</li>
+						<li>
+							<a href="index13.html">
+								Home Work - 13
+							</a>
+						</li>
+						<li>
+							<a href="index13.html">
+								Home Work - 13
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="list"><a href="#">MarkUp</a></li>
+				<li class="list"><a href="#">Soсials</a>
+
+					<ul>	
+						<li>
+							<a href="https://uk-ua.facebook.com/">
+								<div class="icon-facebook">	
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/?hl=ru">
+								<div class="icon-instagram">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/">
+								<div class="icon-youtube">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/">
+								<div class="icon-linkedin2">
+								</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="list"><a href="../index.html">To main</a></li>
+			</ul>
+		</nav>
+
+
+
+
+
+		<div class="main_article">
+			<p>
+				Main Part ( 3 points )
+			</p>
+			<div class="text0">
+				<pre class="text2-1"></pre>
+
+				<pre class="text1-1"></pre>
+			</div>
+
+		</div>
+		<input type="button" class="func1" value="Run script" onclick="homeWorkOne();">
+
+
+
+		<div class="main_article">
+			<p>
+				Additional ( 4 points )
+			</p>
+			<div class="text0">
+				<pre class="text2-2"></pre>
+
+				<pre class="text1-2"></pre>
+			</div>
+
+		</div>
+		<input type="button" class="func1" value="Run script" onclick="homeWorkTwo(5)" >
+		<input type="button" class="func1" value="Run script" onclick="homeWorkTwo('bgvfcd')" >
+
+
+		<div class="main_article">
+			<p>
+				Additional ( 5 points )
+			</p>
+			<div class="text0">
+				<pre class="text2-3"></pre>
+				<pre class="text1-3">
+					<img src="images/HW_2.png"
+				</pre>
+			</div>
+			<form  action="https://garevna.github.io/js-samples/#01">
+				<button class="func1" type="submit">Link</button>
+			</form>
 
 		</div>
 		
 
-	</section>
-<script type="text/javascript" src="../js/nemu.js"></script>
-<div class="footer">
-				<div class="link-cont">
-					<div class="link">
-						<a href="https://uk-ua.facebook.com/">
-							<div class="icon-facebook">	
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.instagram.com/?hl=ru">
-							<div class="icon-instagram">
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.youtube.com/">
-							<div class="icon-youtube">
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.linkedin.com/">
-							<div class="icon-linkedin2">
-							</div>
-						</a>
-					</div>
-					
-				</div>
-			</div>
+		<figure>
+			<img src="images/vito.png" alt="logo_js">
+
+		</figure>
+
+	</div>
 </body>
 </html>

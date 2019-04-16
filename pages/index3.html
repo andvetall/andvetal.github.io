@@ -7,298 +7,180 @@
 	<title>HomeWorks-js</title>
 	<script type="text/javascript" src="../js/home-work3.js"></script>
 </head>
-<body>
+<body onload="
+		showCode(homeWorkOne, '.text1-1'),
+		showCode(homeWorkTwo, '.text1-2',), 
+		showCode(homeWorkThree, '.text1-3'),
+		showTask('.text2-1', one),
+		showTask('.text2-2', two),
+		showTask('.text2-3', three)">
 
-	<header class="top_page">
-		<div class="banner1">
-			<h1>Home Works</h1>
-		</div>
-	</header>
-	<section class="big_block">
+	
+	<div class="big_block">
 
 		<nav class="navigation">
-			<div class="sidebar">
-				<h2 class="sidebar_top">
-					Choose Home Work	
-				</h2>
-				<ul class="list">
-					<li>
-						<a href="index1.html">
-							Home work - 1
-						</a>
-					</li>
-					<li>
-						<a href="index2.html">
-							Home Work - 2
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 3
-						</a>
-					</li>
-					<li>
-						<a href="index4.html">
-							Home Work - 4
-						</a>
-					</li>
-					<li>
-						<a href="index5.html">
-							Home Work - 5
-						</a>
-					</li>
-					<li>
-						<a href="index6.html">
-							Home Work - 6
-						</a>
-					</li>
-					<li>
-						<a href="index7.html">
-							Home Work - 7
-						</a>
-					</li>
-					<li>
-						<a href="index8.html">
-							Home Work - 8
-						</a>
-					</li>
-					<li>
-						<a href="index9.html">
-							Home Work - 9
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 10
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 11
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Home Work - 12
-						</a>
-					</li>
-				</ul>
-				<hr>
-				
-				
-				<a class="main_page_link" href="../index.html">
-					Go to main page!
-				</a>
-			</div>
-
-			<!-- <div class="button1">
-				<button>
-					RESERVE YOUR STAY TODAY!
-				</button>
-				
-			</div> -->
 			
+			<ul>
+				<li id="menu"><a href="#">Menu</a></li>
+				<li class="list"><a href="#">JS</a>
+					<ul>
+						<li>
+							<a href="index1.html">
+								Home work - 1
+							</a>
+						</li>
+						<li>
+							<a href="index2.html">
+								Home Work - 2
+							</a>
+						</li>
+						<li>
+							<a href="index3.html">
+								Home Work - 3
+							</a>
+						</li>
+						<li>
+							<a href="index4.html">
+								Home Work - 4
+							</a>
+						</li>
+						<li>
+							<a href="index5.html">
+								Home Work - 5
+							</a>
+						</li>
+						<li>
+							<a href="index6.html">
+								Home Work - 6
+							</a>
+						</li>
+						<li>
+							<a href="index7.html">
+								Home Work - 7
+							</a>
+						</li>
+						<li>
+							<a href="index8.html">
+								Home Work - 8
+							</a>
+						</li>
+						<li>
+							<a href="index9.html">
+								Home Work - 9
+							</a>
+						</li>
+						<li>
+							<a href="index10.html">
+								Home Work - 10
+							</a>
+						</li>
+						<li>
+							<a href="index11.html">
+								Home Work - 11
+							</a>
+						</li>
+						<li>
+							<a href="index12.html">
+								Home Work - 12
+							</a>
+						</li>
+						<li>
+							<a href="index13.html">
+								Home Work - 13
+							</a>
+						</li>
+						<li>
+							<a href="index13.html">
+								Home Work - 13
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="list"><a href="#">MarkUp</a></li>
+				<li class="list"><a href="#">Soсials</a>
+
+					<ul>	
+						<li>
+							<a href="https://uk-ua.facebook.com/">
+								<div class="icon-facebook">	
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/?hl=ru">
+								<div class="icon-instagram">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/">
+								<div class="icon-youtube">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/">
+								<div class="icon-linkedin2">
+								</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="list"><a href="../index.html">To main</a></li>
+			</ul>
 		</nav>
 
+
+
+
+
 		<div class="main_article">
-			<h3>
-				Andriichuk Vitalii
-			</h3>
-			<p class="italic_p">
-				Home Work 3
-			</p>
 			<p>
-				Обязательная часть ( 3 балла )
+				Main Part ( 3 points )
 			</p>
-			<textarea disabled="disabled" rows="15" class="text2">
+			<div class="text0">
+				<pre class="text2-1"></pre>
 
-	Объявите функцию без формальных параметров, которая выводит в консоль сама себя и все переданные ей аргументы
-Вызовите эту функцию с аргументами 10, false, "google"
-			</textarea>
-			
-			<textarea disabled="disabled" rows="20" class="text1">
-function homeWorkThreeOne () {
-    console.log ( arguments )
-}
-homeWorkThreeOne(10, false, "google")
-			</textarea>
-			<input type="button" class="func1" value="Выполнить код" onclick="homeWorkThreeOne(10, false, 'google')">
-			
+				<pre class="text1-1"></pre>
+			</div>
+
+		</div>
+		<input type="button" class="func1" value="Run script" onclick="homeWorkOne(10, false, 'google');">
+
+
+
+		<div class="main_article">
 			<p>
-				Дополнительно ( 4 балла )
+				Additional ( 4 points )
 			</p>
-			<textarea disabled="disabled" rows="15" class="text2">
-	
-	Объявите функцию userInfo, которая выводит в консоль:
+			<div class="text0">
+				<pre class="text2-2"></pre>
 
-свойство "Дата регистрации: " + свойство data контекста вызова, если свойство registered имеет значение true
-сообщение "Незарегистрированный пользователь: " + свойство name в противном случае
-( используйте переменные в литералах )
+				<pre class="text1-2"></pre>
+			</div>
 
-Создайте два объекта с одинаковым набором свойств:
+		</div>
+		<input type="button" class="func1" value="Run script" onclick="homeWorkTwo()" >
 
-name ( строка )
-registered ( логическое значение )
-data ( дата в формате "дд.мм.гг" )
-Добавьте каждому объекту метод getInfo, который будет ссылкой на функцию userInfo
 
-Вызовите каждый метод
-			</textarea>
-			
-			<textarea disabled="disabled" rows="20" class="text1">
-  var user1 = {
-        name: "Vasya",
-        registered: true,
-        data: new Date(1991, 3, 15),
-        getInfo: userInfo
-    }
-    var user2 = {
-        name: "Petya",
-        registered: false,
-        data: new Date(),
-        getInfo: userInfo
-    }
-
-    function userInfo() {
-        this.registered == true ? alert(`Дата регистрации: ${this.data}`)
-            : alert(`Незарегистрированный пользователь: ${this.name}`)
-
-    }
-    user1.getInfo()
-    user2.getInfo()
-			</textarea>
-			<input type="button" class="func1" value="Выполнить код" onclick="user1.getInfo(), user2.getInfo();">
-			
+		<div class="main_article">
 			<p>
-				Дополнительно ( 5 балла )
+				Additional ( 5 points )
 			</p>
-			<textarea disabled="disabled" rows="15" class="text2">
-	
-	Есть три объекта: users, posts и comments
-Написать код функции getPostComments ( postId ),
-которая возвращает массив всех комментариев к посту
-с идентификатором postId
-( с именем автора комментария и текстом комментария )
-			</textarea>
-			
-				
-			<textarea disabled="disabled" rows="20" class="text1">
-var users = {
-    14587: {
-        name: "Ivan",
-        email: "ivan78@gmail.com"
-    },
-    28419: {
-        name: "Georg",
-        email: "georg.klep@gmail.com"
-    },
-    41457: {
-        name: "Stephan",
-        email: "stephan.borg@gmail.com"
-    }
-}
-var posts = {
-    7891451: {
-        author: 14587,
-        text: "Imagine we can encapsulate these secondary responsibilities in functions"
-    },
-    7891452: {
-        author: 28419,
-        text: `В конструкторе ключевое слово super используется как функция, вызывающая родительский конструктор.
-                        Её необходимо вызвать до первого обращения к ключевому слову this в теле конструктора.
-                        Ключевое слово super также может быть использовано для вызова функций родительского объекта`
-    },
-    7891453: {
-        author: 28419,
-        text: `DOM не обрабатывает или не вынуждает проверять пространство имен как таковое.
-                        Префикс пространства имен, когда он связан с конкретным узлом, не может быть изменен`
-    },
-    7891454: {
-        author: 14587,
-        text: "Ключевое слово super используется для вызова функций, принадлежащих родителю объекта"
-    }
-}
-var comments = {
-    91078454: {
-        postId: 7891451,
-        author: 28419,
-        text: `The static String.fromCharCode() method returns a string created
-                        from the specified sequence of UTF-16 code units`
-    },
-    91078455: {
-        postId: 7891451,
-        author: 41457,
-        text: `HTML элемент <template> — это механизм для отложенного рендера клиентского контента,
-                        который не отображается во время загрузки, но может быть инициализирован при помощи JavaScript`
-    },
-    91078457: {
-        postId: 7891452,
-        author: 41457,
-        text: "Глобальный объект String является конструктором строк, или, последовательностей символов"
-    },
-    91078458: {
-        postId: 7891452,
-        author: 14587,
-        text: `The Element.namespaceURI read-only property returns the namespace URI of the element,
-                        or null if the element is not in a namespace`
-    }
-}
-
-
-function getCurrentPostComments ( postId ) {
-    var res = []
-    for (var comment in comments) {
-        (comments[comment].postId === postId) ? res.push({
-            author: users[comments[comment].author].name,
-            comments: comments[comment].text
-        }) : null
-
-    }
-    return res
-}
-
-console.log ( getCurrentPostComments ( 7891451 ) )
-			</textarea>
-			<input type="button" class="func1" value="Выполнить код" onclick="alertComments()">
-			
-			<figure>
-				<img src="images/andriichuk.png" alt="logo_js">
-				
-			</figure>
+			<div class="text0">
+				<pre class="text2-3"></pre>
+				<pre class="text1-3"></pre>
+			</div>
+			<input type="button" class="func1" value="Run script" onclick="homeWorkThree()" >
 
 		</div>
 		
 
-	</section>
-<script type="text/javascript" src="../js/nemu.js"></script>
-<div class="footer">
-				<div class="link-cont">
-					<div class="link">
-						<a href="https://uk-ua.facebook.com/">
-							<div class="icon-facebook">	
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.instagram.com/?hl=ru">
-							<div class="icon-instagram">
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.youtube.com/">
-							<div class="icon-youtube">
-							</div>
-						</a>
-					</div>
-					<div class="link">
-						<a href="https://www.linkedin.com/">
-							<div class="icon-linkedin2">
-							</div>
-						</a>
-					</div>
-					
-				</div>
-			</div>
+		<figure>
+			<img src="images/vito.png" alt="logo_js">
+
+		</figure>
+
+	</div>
 </body>
 </html>
