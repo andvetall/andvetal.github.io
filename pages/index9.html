@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HomeWorks-js</title>
 	<script type="text/javascript" src="../js/home-work9.js"></script>
+	<script type="text/javascript" src="../js/hidemenu.js"></script>
 </head>
 <body onload="
 		showCode(homeWorkOne, '.text1-1'),
@@ -96,7 +97,30 @@
 						</li>
 					</ul>
 				</li>
-				<li class="list"><a href="#">MarkUp</a></li>
+				<li class="list"><a href="#">MarkUp</a>
+					<ul>
+						<li>
+							<a href="../mup/HW3/index.html">
+								Layout-1
+							</a>
+						</li>
+						<li>
+							<a href="../mup/HW4/index.html">
+								Layout-2
+							</a>
+						</li>
+						<li>
+							<a href="../mup/HW5/index.html">
+								Layout-3
+							</a>
+						</li>
+						<li>
+							<a href="../mup/HW6/index.html">
+								Layout-4
+							</a>
+						</li>
+					</ul>
+				</li>
 				<li class="list"><a href="#">Soсials</a>
 
 					<ul>	
@@ -133,7 +157,8 @@
 
 
 
-
+		<h1>Vitalii Andriichuk</h1>
+		<h2>Home Work - 9</h2>
 		<div class="main_article">
 			<p>
 				Main Part ( 3 points )
@@ -146,7 +171,7 @@
 			<div class="result1"></div>
 
 		</div>
-		<input type="button" class="func1" value="Run script" onclick="homeWorkOne();">
+		<button class="func1" onclick="homeWorkOne()">Run script</button>
 
 
 
@@ -162,7 +187,7 @@
 			<div class="result2"></div>
 
 		</div>
-		<input type="button" class="func1" value="Run script" onclick="document.querySelector('.result2').textContent = 'Watch in DEV Tools'"/>
+		<button class="func1" onclick="document.querySelector('.result2').textContent = 'Watch in DEV Tools'">Run script</button>
 
 
 		<div class="main_article">
@@ -175,6 +200,7 @@
 			</div>
 			<form  action="https://www.youtube.com/">
 				<button class="func1" type="submit">Check script on Youtube Website</button>
+
 			</form>
 			
 
@@ -185,6 +211,7 @@
 			<img src="images/vito.png" alt="logo_js">
 
 		</figure>
+		<a class="arrow" href="#"><img src="../images/arrow.png"></a>
 
 	</div>
 </body>

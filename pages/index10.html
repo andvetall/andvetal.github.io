@@ -5,17 +5,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HomeWorks-js</title>
-	<script type="text/javascript" src="../js/home-work5.js"></script>
+	<script type="text/javascript" src="../js/home-work10.js"></script>
 	<script type="text/javascript" src="../js/hidemenu.js"></script>
-	
 </head>
 <body onload="
 		showCode(homeWorkOne, '.text1-1'),
 		showCode(homeWorkTwo, '.text1-2',), 
-		showCode(homeWorkThree, '.text1-3'),
 		showTask('.text2-1', one),
-		showTask('.text2-2', two),
-		showTask('.text2-3', three)">
+		showTask('.text2-2', two)">
 
 	
 	<div class="big_block">
@@ -159,7 +156,7 @@
 
 
 		<h1>Vitalii Andriichuk</h1>
-		<h2>Home Work - 5</h2>
+		<h2>Home Work - 10</h2>
 		<div class="main_article">
 			<p>
 				Main Part ( 3 points )
@@ -169,9 +166,10 @@
 
 				<pre class="text1-1"></pre>
 			</div>
+			<div class="result1"></div>
 
 		</div>
-		<button class="func1" onclick="homeWorkOne()">Run script</button>
+		<button class="func1" onclick="document.querySelector('.result1').textContent = 'Watch in DEV Tools'">Run script</button>
 
 
 
@@ -184,12 +182,14 @@
 
 				<pre class="text1-2"></pre>
 			</div>
+			<div class="result2"></div>
 
 		</div>
 		<button class="func1" onclick="homeWorkTwo()">Run script</button>
+		
 
 
-		<div class="main_article">
+		<!-- <div class="main_article">
 			<p>
 				Additional ( 5 points )
 			</p>
@@ -197,10 +197,14 @@
 				<pre class="text2-3"></pre>
 				<pre class="text1-3"></pre>
 			</div>
-			<button class="func1" onclick="homeWorkThree()">Run script</button>
+			<form  action="https://www.youtube.com/">
+				<button class="func1" type="submit">Check script on Youtube Website</button>
+
+			</form>
+			
 
 		</div>
-		
+		 -->
 
 		<figure>
 			<img src="images/vito.png" alt="logo_js">
