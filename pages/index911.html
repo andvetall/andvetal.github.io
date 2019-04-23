@@ -5,16 +5,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HomeWorks-js</title>
-	<script type="text/javascript" src="../js/home-work9.js"></script>
+	<style>
+    	* { padding: 0; margin: 0; }
+    	canvas { background: #1b2753de; display: block; margin: 0 auto; }
+    </style>
+	
 	
 </head>
-<body onload="
-		showCode(homeWorkOne, '.text1-1'),
-		showCode(homeWorkTwo, '.text1-2',), 
-		showCode(homeWorkThree, '.text1-3'),
-		showTask('.text2-1', one),
-		showTask('.text2-2', two),
-		showTask('.text2-3', three)">
+<body>
 
 	
 	<div class="big_block">
@@ -158,59 +156,21 @@
 
 
 		<h1>Vitalii Andriichuk</h1>
-		<h2>Home Work - 9</h2>
-		<div class="main_article">
-			<p>
-				Main Part ( 3 points )
-			</p>
-			<div class="text0">
-				<pre class="text2-1"></pre>
-
-				<pre class="text1-1"></pre>
-			</div>
-			<div class="result1"></div>
-
+		<h2>Project Work</h2>
+		<div class="project">
+			<canvas id="myCanvas" width="680" height="520"></canvas>
 		</div>
-		<button class="func1" onclick="homeWorkOne()">Run script</button>
+		<button class="func1" onclick="draw()">Start Game</button>
 
 
-
-		<div class="main_article">
-			<p>
-				Additional ( 4 points )
-			</p>
-			<div class="text0">
-				<pre class="text2-2"></pre>
-
-				<pre class="text1-2"></pre>
-			</div>
-			<div class="result2"></div>
-
-		</div>
-		<button class="func1" onclick="document.querySelector('.result2').textContent = 'Watch in DEV Tools'">Run script</button>
-
-
-		<div class="main_article">
-			<p>
-				Additional ( 5 points )
-			</p>
-			<div class="text0">
-				<pre class="text2-3"></pre>
-				<pre class="text1-3"></pre>
-			</div>
-		</div>
-		<form  action="https://www.youtube.com/">
-			<button class="func1" type="submit">Check script on Youtube Website</button>
-		</form>
-		
 
 		<figure>
 			<img src="images/vito.png" alt="logo_js">
 
 		</figure>
-		<a class="arrow" href="#"><img src="../images/arrow.png"></a>
-
+	<a class="arrow" href="#"><img src="../images/arrow.png"></a>
 	</div>
+	<script type="text/javascript" src="../js/home-work911.js"></script>
 	<script type="text/javascript" src="../js/hidemenu.js"></script>
 </body>
 </html>

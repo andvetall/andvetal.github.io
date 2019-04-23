@@ -292,6 +292,20 @@ box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	font-weight: bold;
 	background: #9e7346c2;
 }
+.project{
+		font-family: lato_reg;
+	white-space: pre-wrap;
+	overflow: auto;
+	text-align: center;
+	min-height: 500px;
+	margin: 60px auto 0;
+	width: 100%;
+	padding: 0;
+	border: none;
+	color: white;
+	font-weight: bold;
+	background: #9e7346c2;
+}
 .func1{
 	font-size: 15px;
 	font-weight: bold;
@@ -321,6 +335,10 @@ figure img{
 	text-align: center;
 	font-style: italic;
 	width: 220px;
+}
+form{
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -386,7 +404,7 @@ figure img{
 					.sidebar_top{
 						margin-top: 10px;
 					}
-					.func1{
+					.func1, form .func1{
 						margin: 0 auto;
 						width: 95%;
 					}
