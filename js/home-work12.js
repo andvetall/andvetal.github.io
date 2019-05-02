@@ -23,8 +23,8 @@ function homeWorkOne() {
                     return date.lastVisit
                 }
             )
-        !res.lastVisit ? document.cookie = `lastVisit=${new Date().toLocaleString()}`
-            : document.body.appendChild(
+        !res ? document.cookie = `lastVisit=${new Date().toLocaleString()}`
+            : document.querySelector('.result1').appendChild(
             document.createElement('p')).innerText = `Last visit was : ${res.lastVisit}`
 
     }
@@ -52,39 +52,30 @@ let two =`localStorage
 и наблюдайте изменения на странице и в localStorage`
 function homeWorkTwo() {
 
-    var messages = [
-        "backspace",
-        "enter",
-        "shift",
-        "control",
-        "delete",
-        "space",
-        "subtract"
-    ]
+    window.addEventListener( 'hashchange', function(e) {
 
-    messages.getKey = () => {
-        var key = new Date().toLocaleString().split(", ")[1]
-        return log [key] ? log [key + "[2]"] ? key + "[3]" : key + "[2]" : key
-    }
-
-    var log = {}
-
-    var sendMessage = message => new Promise(
-        resolve => setTimeout(
-            () => resolve(message),
-            Math.random() * 7000
+        var history = {
+            pageId: `${window.location.hash}`,
+            startTime: `${new Date().getTime() / 1000}`
+        }
+        localStorage.setItem(
+            "history",
+            JSON.stringify(history)
         )
-    )
+        document.querySelector('.result2')
+            .appendChild(document.createElement('p'))
+                .textContent = 'localStorage was changed from outside'
+        document.querySelector('.result2')
+            .appendChild(document.createElement('p'))
+                .textContent = `${localStorage ["history"]}`
 
-    messages.forEach(
-        (message, index, arr) => sendMessage(message)
-            .then(
-                mess => Object.assign(log,
-                    {[arr.getKey()]: message}
-                )
-            )
-    )
-    console.log(log)
+
+    })
+
+}
+function pr(){
+    var message = prompt("Enter New 'hash'")
+    location.hash = `#${message}`
 }
 // 3(5 points)
 let three = `Рулетка
@@ -105,53 +96,51 @@ let three = `Рулетка
 На время показа картинок кнопку лучше прятать`
 function homeWorkThree() {
 
-    var messages = [
-        "backspace",
-        "enter",
-        "shift",
-        "control",
-        "delete",
-        "space",
-        "subtract"
-    ]
-
-    messages.getKey = () => new Date().toLocaleString().split(", ")[1]
-
-    var log = {}
-
-    var sendMessage = message => new Promise(
-        resolve => setTimeout(
-            () => resolve(message),
-            Math.random() * 5000
-        )
+    var addElem = tagName => document.querySelector('.result3').appendChild (
+        document.createElement ( tagName )
     )
 
-    var sendAll = () => {
-        var index = 0
+    var timeOut = time => new Promise (
+        resolve => setTimeout ( () => resolve(), time )
+    )
 
-        function recursive() {
-            sendMessage(messages [index++])
-                .then(
-                    response => {
-                        if (!response) return
-                        Object.assign(log,
-                            {[messages.getKey()]: response}
-                        )
-                        recursive()
-                    }
-                )
+    document.body.style.fontFamily = `monospace, Arial`
+
+    var startButton = addElem ( 'button' )
+    startButton.innerText = 'Крутить рулетку'
+
+    startButton.onclick = event => {
+        var winnwer = Math.round ( Math.random() * 20000 )
+        event.target.style.display = "none"
+        var user
+        function show( photoURL, login ) {
+            img.src = photoURL
+            user = addElem ( "h4" )
+            user.innerText = `winner: ${login}`
         }
-
-        recursive()
+        var img = addElem( "img" )
+        img.height = "200"
+        img.src = "https://thumbs.gfycat.com/LivelyObviousAnhinga-size_restricted.gif"
+        img.style.transition = "all 0.5s"
+        timeOut ( 4000 )
+            .then ( () => img.src = "https://thumbs.gfycat.com/OddWideHookersealion-small.gif" )
+        timeOut ( 3500 )
+            .then ( () => img.style.opacity = 0 )
+        timeOut ( 4500 )
+            .then ( () => img.style.opacity = 1 )
+        timeOut ( 5500 )
+            .then (
+                () => fetch ( `https://api.github.com/users?since=${winnwer}` )
+                    .then ( response => response.json()
+                        .then ( users => show ( users[0].avatar_url, users[0].login ) )
+                    )
+            )
+        timeOut ( 10000 )
+            .then ( () => {
+                img.remove()
+                user.remove()
+                event.target.style.display = "block"
+            })
     }
-
-    sendAll()
-    console.log(log)
 }
 
-function showCode(param1, param2){
-    document.querySelector(param2).innerHTML = param1.toLocaleString()
-}
-function showTask(param1, param2){
-    document.querySelector(param1).innerHTML = param2
-}

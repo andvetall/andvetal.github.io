@@ -2,9 +2,9 @@ window.addEventListener("scroll", bringmenu);
 
 function bringmenu() {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-        document.querySelector(".navigation").style.left = "-160%";
+        document.querySelector(".navigation").style.top = "-60%";
     } else {
-        document.querySelector(".navigation").style.left = "0";
+        document.querySelector(".navigation").style.top = "0";
     }
 }
 window.addEventListener("scroll", hidearrow);
@@ -28,3 +28,9 @@ document.querySelector('.arrow').addEventListener('click', function(event) {
 })
 
 
+function showCode(param1, param2){
+    document.querySelector(param2).innerHTML = param1.toLocaleString()
+}
+function showTask(param1, param2){
+    document.querySelector(param1).innerHTML = param2
+}

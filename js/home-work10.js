@@ -131,9 +131,3 @@ function homeWorkTwo() {
     alert(user.presense)
 }
 
-function showCode(param1, param2){
-    document.querySelector(param2).innerHTML = param1.toLocaleString()
-}
-function showTask(param1, param2){
-    document.querySelector(param1).innerHTML = param2
-}

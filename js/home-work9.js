@@ -144,10 +144,3 @@ function homeWorkThree() {
     changeClass("paper-button", "opacity:0")
 }
 
-
-function showCode(param1, param2){
-    document.querySelector(param2).innerHTML = param1.toLocaleString()
-}
-function showTask(param1, param2){
-    document.querySelector(param1).innerHTML = param2
-}

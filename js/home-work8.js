@@ -105,9 +105,3 @@ function homeWorkThree() {
     alert(`${users[3].name} - id ${users[3].id}`)
 }
 
-function showCode(param1, param2){
-    document.querySelector(param2).innerHTML = param1.toLocaleString()
-}
-function showTask(param1, param2){
-    document.querySelector(param1).innerHTML = param2
-}
